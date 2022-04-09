@@ -1,14 +1,210 @@
 <!DOCTYPE html>
-<html lang="en" data-loading="true">
+<html lang="en" data-loading="false">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="../assets/ministyle/css/ministyle.css">
+  <link rel="stylesheet" href="../assets/ministyle/css/ministyle.css">
+  <script rel="stylesheet" src="../assets/ministyle/js/ministyle.js"></script>
+  <script>
+    window.addEventListener("load", (e) => {
+      SVGIcon.addLoading()
+
+      navbar = new Navbar(document.getElementById("navbar"))
+      modal = new Modal(document.getElementById("modal"))
+      carousel = new Carousel(document.getElementById("carousel"))
+      accordion = new Accordion(document.getElementById("accordion"))
+      collapse = new Collapse(document.getElementById("collapse"))
+      scrollInit()
+      scrollSync()
+      invalidBlankAnchor()
+    })
+  </script>
 
   <title>Ministyle</title>
 </head>
+
 <body>
+  <header>
+    <nav class="navbar bg-dark" id="navbar">
+      <ul class="group">
+        <li class="item active">
+          <a class="text-light text-hover-light" href="#">Lorem</a>
+        </li>
+        <li class="item">
+          <a class="text-light text-hover-light" href="" id="submenu-open">Ministyle</a>
+          <ul class="submenu collapse bg-dark group" id="collapse" data-collapsed="submenu-open">
+            <li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#basic">Basic
+                Configs</a></li>
+            <li class="item"><a class="text-light text-hover-light bg-hover-darken-light"
+                href="/ministyle#colors">Colors</a></li>
+            <li class="item"><a class="text-light text-hover-light bg-hover-darken-light"
+                href="/ministyle#components">Components</a></li>
+            <li class="item"><a class="text-light text-hover-light bg-hover-darken-light"
+                href="/ministyle#js-components">JS Components</a></li>
+            <li class="item"><a class="text-light text-hover-light bg-hover-darken-light"
+                href="/ministyle#scripts">Scripts</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <button class="navbar-toggle" onclick="navbar.toggle()"></button>
+  </header>
+
+  <body>
+    <div class="content">
+      <h1>Ministyle</h1>
+      <p>JS is not a solution, it's a problem! Use when there is no way out.</p>
+      <p>Ministyle is a <b>StyleSheet</b> library created to make writing code easier, removing complex struct to
+        generate components and reducing your html.</p>
+
+      <h2>Basic Config</h2>
+      <article id="basic">
+
+      </article>
+      <!-- Color  -->
+      <article id="colors">
+        <h3>Basic Colors</h3>
+        <section>
+          <pre class="p-0">
+            <code class="p-0 m-0 text-left">
+  &lt;div class=<span class="text-danger">"d-inline-block bg-primary"</span>&gt;&lt;/div&gt;
+  &lt;div class=<span class="text-danger">"d-inline-block bg-success"</span>&gt;&lt;/div&gt;
+  &lt;div class=<span class="text-danger">"d-inline-block bg-danger"</span>&gt;&lt;/div&gt;
+  &lt;div class=<span class="text-danger">"d-inline-block bg-warning"</span>&gt;&lt;/div&gt;
+  &lt;div class=<span class="text-danger">"d-inline-block bg-info"</span>&gt;&lt;/div&gt;
+  &lt;div class=<span class="text-danger">"d-inline-block bg-dark"</span>&gt;&lt;/div&gt;
+  &lt;div class=<span class="text-danger">"d-inline-block bg-light"</span>&gt;&lt;/div&gt;
+  &lt;div class=<span class="text-danger">"d-inline-block bg-secondary"</span>&gt;&lt;/div&gt;</code>
+          </pre>
+          <div class="d-inline-block bg-primary" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-success" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-danger" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-warning" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-info" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-dark" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-light" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-secondary" style="width: 64px; height: 64px;"></div>
+
+          <h3>Dark Colors</h3>
+
+          <pre><code>.bg-darken-{{color}}</code></pre>
+
+          <div class="d-inline-block bg-darken-primary" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-darken-success" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-darken-danger" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-darken-warning" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-darken-info" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-darken-light" style="width: 64px; height: 64px;"></div>
+
+          <h3>Light Colors</h3>
+
+          <pre><code>.bg-lighten-{{color}}</code></pre>
+
+          <div class="d-inline-block bg-lighten-primary" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-lighten-success" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-lighten-danger" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-lighten-warning" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-lighten-info" style="width: 64px; height: 64px;"></div>
+          <div class="d-inline-block bg-lighten-dark" style="width: 64px; height: 64px;"></div>
+        </section>
+      </article>
+      <article id="components">
+
+      </article>
+      <article id="js-components">
+
+      </article>
+      <article id="scripts">
+
+      </article>
+
+      <h2>Examples</h2>
+      <article id="Accordion" class="mt-1">
+        <h3>Accordion</h3>
+      </article>
+      <article id="Alert" class="mt-1">
+        <h3>Alert</h3>
+      </article>
+      <article id="Animation" class="mt-1">
+        <h3>Animation</h3>
+      </article>
+      <article id="Badge" class="mt-1">
+        <h3>Badge</h3>
+      </article>
+      <article id="Blockquote" class="mt-1">
+        <h3>Blockquote</h3>
+      </article>
+      <article id="Border" class="mt-1">
+        <h3>Border</h3>
+      </article>
+      <article id="Button" class="mt-1">
+        <h3>Button</h3>
+      </article>
+      <article id="Card" class="mt-1">
+        <h3>Card</h3>
+      </article>
+      <article id="Carousel" class="mt-1">
+        <h3>Carousel</h3>
+      </article>
+      <article id="Code" class="mt-1">
+        <h3>Code</h3>
+      </article>
+      <article id="Divider" class="mt-1">
+        <h3>Divider</h3>
+      </article>
+      <article id="Dropdown" class="mt-1">
+        <h3>Dropdown</h3>
+      </article>
+      <article id="Form" class="mt-1">
+        <h3>Form</h3>
+      </article>
+      <article id="Grid" class="mt-1">
+        <h3>Grid</h3>
+      </article>
+      <article id="Icon" class="mt-1">
+        <h3>Icon</h3>
+      </article>
+      <article id="Image" class="mt-1">
+        <h3>Image</h3>
+      </article>
+      <article id="Link" class="mt-1">
+        <h3>Link</h3>
+      </article>
+      <article id="List" class="mt-1">
+        <h3>List</h3>
+      </article>
+      <article id="Loading" class="mt-1">
+        <h3>Loading</h3>
+      </article>
+      <article id="Modal" class="mt-1">
+        <h3>Modal</h3>
+      </article>
+      <article id="Navbar" class="mt-1">
+        <h3>Navbar</h3>
+      </article>
+      <article id="Screen" class="mt-1">
+        <h3>Screen</h3>
+      </article>
+      <article id="Spacing" class="mt-1">
+        <h3>Spacing</h3>
+      </article>
+      <article id="Table" class="mt-1">
+        <h3>Table</h3>
+      </article>
+      <article id="Typography" class="mt-1">
+        <h3>Typography</h3>
+      </article>
+      <article id="Utility" class="mt-1">
+        <h3>Utility</h3>
+      </article>
+      <article id="Pagination" class="mt-1">
+        <h3>Pagination</h3>
+      </article>
+    </div>
+  </body>
+  <footer class="flex row justify-contents-between bg-dark mt-4" style="min-height: 16rem;"></footer>
   <div class="loading">
     <svg class="spinner">
       <circle></circle>
@@ -18,4 +214,5 @@
     </svg>
   </div>
 </body>
+
 </html>

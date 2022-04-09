@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS CONTENT -->
+	<link rel="stylesheet" href="assets/ministyle/css/ministyle.css">
+	<!-- END CSS CONTENT -->
+	<!-- JS CONTENT -->
+	<script src="assets/ministyle/js/ministyle.js"></script>
+	<script>
+		window.addEventListener("load", ()=>{
+			SVGIcon.addLoading()
+
+      navbar = new Navbar(document.getElementById("navbar"))
+      carousel = new Carousel(document.getElementById("carousel"))
+      collapse = new Collapse(document.getElementById("collapse"))
+      scrollInit()
+      scrollSync()
+      invalidBlankAnchor()
+		})
+	</script>
+	<!-- END JS CONTENT -->
+
+  <title>Brumazzi - GitHub</title>
+
+</head>
+<body>
+	<header>
+		<nav class="navbar bg-dark" id="navbar">
+			<ul class="group">
+				<li class="item active">
+					<a class="text-light text-hover-light" href="#">Lorem</a>
+				</li>
+				<li class="item">
+					<a class="text-light text-hover-light" href="" id="submenu-open">Ministyle</a>
+					<ul class="submenu collapse bg-dark group" id="collapse" data-collapsed="submenu-open">
+						<li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#basic">Basic Configs</a></li>
+						<li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#colors">Colors</a></li>
+						<li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#components">Components</a></li>
+						<li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#js-components">JS Components</a></li>
+						<li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#scripts">Scripts</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<button class="navbar-toggle" onclick="navbar.toggle()"></button>
+	</header>
+	<main>
+		<div class="carousel" data-transition="opacity" id="carousel">
+			<section class="content bg-light bb">
+				<article class="item active">
+					<div class="row flex">
+						<div class="text-center column-10" style="height: 500px;">
+							<h1 class="w-100" style="line-height: 300px; text-transform: uppercase;">Choose Right</h1>
+							<h4>Always use the best for your projects!</h4>
+						</div>
+					</div>
+				</article>
+				<article class="item">
+					<div class="row flex">
+						<div class="text-center column-10" style="height: 500px;">
+							<h1 class="w-100" style="line-height: 300px; text-transform: uppercase;">Ministyle</h1>
+							<h4>Perfection without complication!</h4>
+						</div>
+					</div>
+				</article>
+			</section>
+		</div>
+		<div class="content">
+			<h3>Projects</h3>
+			<div class="row flex justify-contents-center wrap">
+				<div class="column-3">
+					<article class="card shadow w-100">
+						<div class="header">
+							<div class="title text-center">Ministyle</div>
+						</div>
+						<div class="body bt text-justify">
+							<p>Powefull CSS componentes, and easy to use. </p>
+						</div>
+						<div class="footer">
+							<a href="/ministyle/" class="w-100 d-block text-center b-0 button outline bg-hover-light">Read more</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="flex row justify-contents-between bg-dark mt-4" style="min-height: 16rem;">
+
+	</footer>
+
+</body>
+</html>

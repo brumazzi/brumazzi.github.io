@@ -35,16 +35,16 @@
         <li class="item">
           <a class="text-light text-hover-light" href="" id="submenu-open">Ministyle</a>
           <ul class="submenu collapse bg-dark group" id="collapse" data-collapsed="submenu-open">
-            <li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#basic">Basic
+            <li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="#basic">Basic
                 Configs</a></li>
             <li class="item"><a class="text-light text-hover-light bg-hover-darken-light"
-                href="/ministyle#colors">Colors</a></li>
+                href="#colors">Colors</a></li>
             <li class="item"><a class="text-light text-hover-light bg-hover-darken-light"
-                href="/ministyle#components">Components</a></li>
+                href="#components">Components</a></li>
             <li class="item"><a class="text-light text-hover-light bg-hover-darken-light"
-                href="/ministyle#js-components">JS Components</a></li>
+                href="#js-components">JS Components</a></li>
             <li class="item"><a class="text-light text-hover-light bg-hover-darken-light"
-                href="/ministyle#scripts">Scripts</a></li>
+                href="#scripts">Scripts</a></li>
           </ul>
         </li>
       </ul>
@@ -61,11 +61,49 @@
 
       <h2>Basic Config</h2>
       <article id="basic">
+        <h3>Spacing, Typographys, Displays, Utils</h3>
+        <p><code>.rounded</code> round of the borders.</p>
+        <p><code>.no-rounded</code> remove round of the borders.</p>
+        <p><code>.shadow</code> add border shadow.</p>
+        <p><code>.w-{{25|50|75|100}}</code> define width to element.</p>
+        <p><code>.h-{{25|50|75|100}}</code> define height to element.</p>
+        <p><code>.overflow-{{hidden|auto}}</code> add or remove scrollbar.</p>
+        <p><code>.overflow-x-{{hidden|auto}}</code> add or remove scrollbar in x axis.</p>
+        <p><code>.overflow-y-{{hidden|auto}}</code> add or remove scrollbar in y axis.</p>
+        <p><code>.text-{{start|center|end|justify}}</code> align text.</p>
+        <p><code>.line-height-{{0|1|2|3|4}}</code> set line height to element.</p>
+        <p><code>.p-{{0|1|2|3|4|5}}</code> set padding on element.</p>
+        <p><code>.px-{{0|1|2|3|4|5}}</code> set padding on element to left and right.</p>
+        <p><code>.py-{{0|1|2|3|4|5}}</code> set padding on element to top and bottom.</p>
+        <p><code>.p{l|t|r|b}-{{0|1|2|3|4|5}}</code> set padding on element to one direction.</p>
+        <p><code>.m-{{0|1|2|3|4|5}}</code> set margin on element.</p>
+        <p><code>.mx-{{0|1|2|3|4|5}}</code> set margin on element to left and right.</p>
+        <p><code>.my-{{0|1|2|3|4|5}}</code> set margin on element to top and bottom.</p>
+        <p><code>.m{l|t|r|b}-{{0|1|2|3|4|5}}</code> set margin on element to one direction.</p>
+        <p><code>.p-{sm|md|ld|xl}-{{0|1|2|3|4|5}}</code> set padding on element using screen size.</p>
+        <p><code>.px-{sm|md|ld|xl}-{{0|1|2|3|4|5}}</code> set padding on element to left and right using screen size.</p>
+        <p><code>.py-{sm|md|ld|xl}-{{0|1|2|3|4|5}}</code> set padding on element to top and bottom using screen size.</p>
+        <p><code>.p{l|t|r|b}-{sm|md|ld|xl}-{{0|1|2|3|4|5}}</code> set padding on element to one direction using screen size.</p>
+        <p><code>.m-{sm|md|ld|xl}-{{0|1|2|3|4|5}}</code> set margin on element using screen size.</p>
+        <p><code>.mx-{sm|md|ld|xl}-{{0|1|2|3|4|5}}</code> set margin on element to left and right using screen size.</p>
+        <p><code>.my-{sm|md|ld|xl}-{{0|1|2|3|4|5}}</code> set margin on element to top and bottom using screen size.</p>
+        <p><code>.m{l|t|r|b}-{sm|md|ld|xl}-{{0|1|2|3|4|5}}</code> set margin on element to one direction using screen size.</p>
+        <p><code>.d-{{none|block|inline|table|inline-block}}</code> set layout on element.</p>
+        <p><code>.d-{sm|md|ld|xl}-{{none|block|inline|table|inline-block}}</code> set layout on element using screen size.</p>
+        <p><code>.b</code> add border on element.</p>
+        <p><code>.b-0</code> remove border from element.</p>
+        <p><code>.b{l|t|r|b}</code> add border on element on one direction.</p>
+        <p><code>.b{l|t|r|b}-0</code> remove border from element on one direction.</p>
+        <p><code>.b-{sm|md|ld|xl}</code> add border on element using screen size.</p>
+        <p><code>.b-{sm|md|ld|xl}-0</code> remove border from element using screen size.</p>
+        <p><code>.b{l|t|r|b}-{sm|md|ld|xl}</code> add border on element on one direction using screen size.</p>
+        <p><code>.b{l|t|r|b}-{sm|md|ld|xl}-0</code> remove border from element on one direction using screen size.</p>
+
 
       </article>
       <!-- Color  -->
       <article id="colors">
-        <h3>Basic Colors</h3>
+        <h2>Basic Colors</h2>
         <section>
           <pre class="p-0">
             <code class="p-0 m-0 text-left">
@@ -87,7 +125,7 @@
           <div class="d-inline-block bg-light" style="width: 64px; height: 64px;"></div>
           <div class="d-inline-block bg-secondary" style="width: 64px; height: 64px;"></div>
 
-          <h3>Dark Colors</h3>
+          <h2>Dark Colors</h2>
 
           <pre><code>.bg-darken-{{color}}</code></pre>
 
@@ -98,7 +136,7 @@
           <div class="d-inline-block bg-darken-info" style="width: 64px; height: 64px;"></div>
           <div class="d-inline-block bg-darken-light" style="width: 64px; height: 64px;"></div>
 
-          <h3>Light Colors</h3>
+          <h2>Light Colors</h2>
 
           <pre><code>.bg-lighten-{{color}}</code></pre>
 

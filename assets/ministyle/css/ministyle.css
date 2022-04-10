@@ -835,7 +835,7 @@ input[type="radio"] {
   height: 1.8rem;
   transition: 0.2s;
   border-radius: 0.25rem;
-  outline: solid #1f66e5 0.2rem;
+  outline: solid #d0d0d0 1px;
   padding: 0.3rem; }
   input[type="checkbox"]::after,
   input[type="radio"]::after {

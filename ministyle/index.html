@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="../assets/ministyle/css/ministyle.css">
+  <style>
+    .content > article > section{
+      border-top: solid 1px #00000041;
+      margin-top: 2rem;
+    }
+  </style>
   <script rel="stylesheet" src="../assets/ministyle/js/ministyle.js"></script>
   <script>
     window.addEventListener("load", (e) => {
@@ -29,10 +35,10 @@
   <header>
     <nav class="navbar bg-dark" id="navbar">
       <ul class="group">
-        <li class="item active">
+        <li class="item">
           <a class="text-light text-hover-light" href="/">Home</a>
         </li>
-        <li class="item">
+        <li class="item active">
           <a class="text-light text-hover-light" href="" id="submenu-open">Ministyle</a>
           <ul class="submenu collapse bg-dark group" id="collapse" data-collapsed="submenu-open">
             <li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="#basic">Basic Functions</a></li>
@@ -102,8 +108,9 @@
       </article>
       <!-- Color  -->
       <article id="colors">
-        <h2>Basic Colors</h2>
+        <h2>Colors</h2>
         <section>
+          <h3>Basic Colors</h3>
           <pre class="p-0">
             <code class="p-0 m-0 text-left">
   &lt;div class=<span class="text-danger">"d-inline-block bg-primary"</span>&gt;&lt;/div&gt;
@@ -124,7 +131,7 @@
           <div class="d-inline-block bg-light" style="width: 64px; height: 64px;"></div>
           <div class="d-inline-block bg-secondary" style="width: 64px; height: 64px;"></div>
 
-          <h2>Dark Colors</h2>
+          <h3>Dark Colors</h2>
 
           <pre><code>.bg-darken-{{color}}</code></pre>
 
@@ -135,7 +142,7 @@
           <div class="d-inline-block bg-darken-info" style="width: 64px; height: 64px;"></div>
           <div class="d-inline-block bg-darken-light" style="width: 64px; height: 64px;"></div>
 
-          <h2>Light Colors</h2>
+          <h3>Light Colors</h2>
 
           <pre><code>.bg-lighten-{{color}}</code></pre>
 
@@ -173,13 +180,57 @@
   ...
   &lt;span class=<span class="text-danger">"badge <span class="text-dark">dark</span>"</span>&gt; Badge Dark &lt;/span&gt;
           </code></pre>
-          <span class="badge primary"> Badge Primary </span>
-          <span class="badge success"> Badge Success </span>
-          <span class="badge danger"> Badge Danger </span>
-          <span class="badge warning"> Badge Warning </span>
-          <span class="badge info"> Badge Info </span>
-          <span class="badge white"> Badge Info </span>
-          <span class="badge dark"> Badge Info </span>
+          <span class="badge primary">Badge Primary</span>
+          <span class="badge success">Badge Success</span>
+          <span class="badge danger">Badge Danger</span>
+          <span class="badge warning">Badge Warning</span>
+          <span class="badge info">Badge Info</span>
+          <span class="badge light">Badge Light</span>
+          <span class="badge dark">Badge Dark</span>
+        </section>
+        <section>
+          <h3>Button</h3>
+          <pre><code>
+  &lt;a class=<span class="text-danger">"button"</span>&gt; Link Button &lt;/span&gt;
+  &lt;button&gt; Button &lt;/span&gt;
+  &lt;button class=<span class="text-danger">"success"</span>&gt; Button Success &lt;/span&gt;
+  &lt;button class=<span class="text-danger">"outline danger"</span>&gt; Button Danger Outline &lt;/span&gt;
+  &lt;button class=<span class="text-danger">""</span> disabled&gt; Button Disabled &lt;/span&gt;
+          </code></pre>
+
+          <a href="" class="button">Link Button</a>
+          <button>button</button>
+          <button class="success">Button SUccess</button>
+          <button class="outline danger">Button Danger Outline</button>
+          <button disabled="disabled">Button Disabled</button>
+        </section>
+
+        <section>
+          <h3>Card</h3>
+          <pre><code>
+  &lt;div class=<span class="text-danger">"card"</span>&gt;
+    &lt;div class=<span class="text-danger">"header"</span>&gt;
+      &lt;span class=<span class="text-danger">"title"</span>&gt;Card Title&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class=<span class="text-danger">"body"</span>&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit beatae officiis hic rerum repellat quo eveniet maxime, quia est voluptatem soluta natus consequatur sequi obcaecati fuga. Numquam modi cum rerum.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=<span class="text-danger">"footer"</span>&gt;
+      &lt;p&gt;Card footer&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+          </code></pre>
+          <div class="card">
+            <div class="header">
+              <span class="title">Card Title</span>
+            </div>
+            <div class="body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit beatae officiis hic rerum repellat quo eveniet maxime, quia est voluptatem soluta natus consequatur sequi obcaecati fuga. Numquam modi cum rerum.</p>
+            </div>
+            <div class="footer">
+              <p>Card footer</p>
+            </div>
+          </div>
         </section>
 
       </article>
@@ -192,12 +243,6 @@
 
       <!-- <article id="Accordion" class="mt-1">
         <h3>Accordion</h3>
-      </article>
-      <article id="Animation" class="mt-1">
-        <h3>Animation</h3>
-      </article>
-      <article id="Button" class="mt-1">
-        <h3>Button</h3>
       </article>
       <article id="Card" class="mt-1">
         <h3>Card</h3>

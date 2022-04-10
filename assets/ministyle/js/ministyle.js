@@ -47,8 +47,8 @@ class Carousel {
             this.items.push(e);
         });
         this.index = 0;
-        this.timeout = 5;
-        this.changeIn = 5;
+        this.timeout = 10;
+        this.changeIn = 10;
         this.intervalRef = setInterval(() => {
             if (this.changeIn <= 0) {
                 this.changeIn = this.timeout;

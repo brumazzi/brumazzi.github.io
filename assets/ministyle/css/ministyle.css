@@ -281,11 +281,11 @@
   text-align: justify; }
 
 .arrow {
-  background-image: url("img/arrow.svg");
+  background-image: url("/assets/ministyle/svg/arrow.svg");
   background-size: 100% 100%; }
 
 .menu {
-  background-image: url("img/menu.svg");
+  background-image: url("/assets/ministyle/svg/menu.svg");
   background-size: 100% 100%; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -2432,7 +2432,7 @@ button, [type="button"], [type="reset"], [type="submit"] {
       height: 1.8rem;
       transform: rotate(0deg);
       transition: transform 0.6s;
-      background-image: url("img/arrow.svg");
+      background-image: url("/assets/ministyle/svg/arrow.svg");
       background-size: 100% 100%; }
   .accordion:not(.item) > *:first-child > .header {
     border: none; }
@@ -3069,7 +3069,7 @@ button.dropdown {
   border: #d0d0d0 solid 1px;
   padding: 0px;
   margin: 0px;
-  display: table;
+  display: table ruby;
   content: "";
   cursor: default; }
   button.dropdown > .label {
@@ -3085,7 +3085,7 @@ button.dropdown {
     border-radius: 0px 0.25rem 0.25rem 0px;
     width: 3.8rem;
     padding: 1.85rem 0rem;
-    background-image: url("svg/arrow.svg");
+    background-image: url("/assets/ministyle/svg/arrow.svg");
     background-repeat: no-repeat;
     background-size: 30% 30%;
     background-position: 50%;

@@ -1180,6 +1180,8 @@ body > .content, body > main > .content {
 a {
   color: #6495ed;
   text-decoration: none; }
+  a.button {
+    line-height: 1.1; }
   a:focus, a:hover {
     color: #606c76; }
   a.primary {

@@ -17,11 +17,12 @@
     window.addEventListener("load", (e) => {
       SVGIcon.addLoading()
 
-      navbar = new Navbar(document.getElementById("navbar"))
+      // navbar = new Navbar(document.getElementById("navbar"))
       modal = new Modal(document.getElementById("modal"))
       carousel = new Carousel(document.getElementById("carousel"))
-      accordion = new Accordion(document.getElementById("accordion"))
-      collapse = new Collapse(document.getElementById("collapse"))
+      carousel.setInterval(5)
+      // accordion = new Accordion(document.getElementById("accordion"))
+      // collapse = new Collapse(document.getElementById("collapse"))
       scrollInit()
       scrollSync()
       invalidBlankAnchor()
@@ -456,25 +457,95 @@
 
       </article>
       <article id="js-components">
+        <section id="Accordion" class="mt-1">
+          <h3>Accordion</h3>
+        </section>
+        <section id="Carousel" class="mt-1">
+          <h3>Carousel</h3>
 
+          <pre><code>
+  <span class='text-success'>&lt;!-- data-transition set animation type to carousel, can be used: {none|opacity} --&gt;</span>
+  &lt;div class=<span class='text-danger'>"carousel"</span> data-transition=<span class='text-danger'>"opacity"</span> id=<span class='text-danger'>"carousel"</span>&gt;
+    &lt;section class=<span class='text-danger'>"content bg-light bb"</span>&gt;
+      &lt;article class=<span class='text-danger'>"item active"</span>&gt;
+        &lt;div class=<span class='text-danger'>"row flex"</span>&gt;
+          &lt;div class=<span class='text-danger'>"text-center column-10"</span> style=<span class='text-danger'>"height: 430px;"</span>&gt;
+            &lt;h1 class=<span class='text-danger'>"w-100"</span> style=<span class='text-danger'>"line-height: 430px; text-transform: uppercase;"</span>&gt;Item 1&lt;/h1&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/article&gt;
+      &lt;article class=<span class='text-danger'>"item"</span>&gt;
+        &lt;div class=<span class='text-danger'>"row flex"</span>&gt;
+          &lt;div class=<span class='text-danger'>"text-center column-10"</span> style=<span class='text-danger'>"height: 430px;"</span>&gt;
+            &lt;h1 class=<span class='text-danger'>"w-100"</span> style=<span class='text-danger'>"line-height: 430px; text-transform: uppercase;"</span>&gt;Item 2&lt;/h1&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/article&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
+          </code></pre>
+
+          <div class="carousel" data-transition="opacity" id="carousel">
+            <section class="content bg-light bb">
+              <article class="item active">
+                <div class="row flex">
+                  <div class="text-center column-10" style="height: 430px;">
+                    <h1 class="w-100" style="line-height: 430px; text-transform: uppercase;">Item 1</h1>
+                  </div>
+                </div>
+              </article>
+              <article class="item">
+                <div class="row flex">
+                  <div class="text-center column-10" style="height: 430px;">
+                    <h1 class="w-100" style="line-height: 430px; text-transform: uppercase;">Item 2</h1>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </section>
+        <section id="Modal" class="mt-1">
+          <h3>Modal</h3>
+
+          <pre><code>
+  &lt;div class=<span class='text-danger'>"modal"</span> id="modal"&gt;
+    &lt;div class=<span class='text-danger'>"card bg-light w-50"</span>&gt;
+      &lt;div class=<span class='text-danger'>"header"</span>&gt;
+        &lt;span class=<span class='text-danger'>"title"</span>&gt;Modal&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=<span class='text-danger'>"body"</span>&gt;
+        &lt;p class=<span class='text-danger'>"text-justify"</span>&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolores dolorum expedita et! Dignissimos, quisquam? Minima fuga temporibus pariatur possimus perferendis consectetur tempora soluta voluptate atque. Dicta aut accusantium possimus.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=<span class='text-danger'>"footer text-end"</span>&gt;
+        &lt;button class=<span class='text-danger'>"danger outline" onclick="modal.hide()"</span>&gt;Close&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+          </code></pre>
+
+          <button onclick="modal.show()">Show Modal</button>
+          <div class="modal" id="modal">
+            <div class="card bg-light w-50">
+              <div class="header">
+                <span class="title">Modal</span>
+              </div>
+              <div class="body">
+                <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolores dolorum expedita et! Dignissimos, quisquam? Minima fuga temporibus pariatur possimus perferendis consectetur tempora soluta voluptate atque. Dicta aut accusantium possimus.</p>
+              </div>
+              <div class="footer text-end">
+                <button class="danger outline" onclick="modal.hide()">Close</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Navbar" class="mt-1">
+          <h3>Navbar</h3>
+        </section>
       </article>
       <article id="scripts">
 
       </article>
 
-      <!-- <article id="Accordion" class="mt-1">
-        <h3>Accordion</h3>
-      </article>
-      <article id="Carousel" class="mt-1">
-        <h3>Carousel</h3>
-      </article>
-      <article id="Modal" class="mt-1">
-        <h3>Modal</h3>
-      </article>
-      <article id="Navbar" class="mt-1">
-        <h3>Navbar</h3>
-      </article>
-      -->
     </div>
   </body>
   <footer class="flex row justify-contents-between bg-dark mt-4" style="min-height: 16rem;"></footer>

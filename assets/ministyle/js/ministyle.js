@@ -21,22 +21,24 @@ class Accordion {
     }
 }
 // register async requests
-XMLHttpRequest.prototype["requests"] = 0;
+/* this function get conflict with framework that have ajax funciton */
+XMLHttpRequest.prototype["getXMLHttpRequests"] = 0;
 XMLHttpRequest.prototype["nativeSend"] = XMLHttpRequest.prototype.send;
 XMLHttpRequest.prototype.send = function (body) {
     this.onreadystatechange = function (e) {
         switch (this.readyStage) {
             case XMLHttpRequest.HEADERS_RECEIVED:
-                XMLHttpRequest["requests"] += 1;
+                XMLHttpRequest["getXMLHttpRequests"] += 1;
                 break;
             case XMLHttpRequest.DONE:
-                XMLHttpRequest["requests"] -= 1;
+                XMLHttpRequest["getXMLHttpRequests"] -= 1;
                 break;
         }
     };
+    this.nativeSend(body);
 };
 window["getAsyncRequests"] = () => {
-    return XMLHttpRequest.prototype["requests"];
+    return XMLHttpRequest.prototype["getXMLHttpRequests"];
 };
 class Carousel {
     constructor(element) {
@@ -50,6 +52,8 @@ class Carousel {
         this.timeout = 10;
         this.changeIn = 10;
         this.intervalRef = setInterval(() => {
+            if (this.timeout === 0)
+                return null;
             if (this.changeIn <= 0) {
                 this.changeIn = this.timeout;
                 this.next();

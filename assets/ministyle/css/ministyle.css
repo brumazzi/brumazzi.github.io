@@ -2585,11 +2585,10 @@ nav.navbar {
 .modal {
   display: none; }
   .modal.active {
-    z-index: 10;
+    z-index: 100;
     position: fixed;
     animation: modal-show 1s linear infinite;
     display: block;
-    position: fixed;
     top: 0px;
     left: 0px;
     width: 100vw;
@@ -2597,10 +2596,13 @@ nav.navbar {
     display: block !important;
     background-color: #00000065; }
     .modal.active > * {
-      display: table;
+      overflow-y: auto;
+      display: block;
       margin: auto;
       position: relative;
-      top: 16rem; }
+      top: 3vh;
+      margin-bottom: 3vh;
+      height: 90vh; }
 
 .alert {
   padding: 1rem;

@@ -107,7 +107,7 @@
         <p><code>.b{l|t|r|b}-{sm|md|ld|xl}-0</code> remove border from element on one direction using screen size.</p>
         <p><code>.row</code> create a row in page.</p>
         <p><code>.column</code> set elements to column if user inside of row.</p>
-        <p><code>.column-{1|2|2-5|3|4|5|6|7|7-5|8|9|10}</code> set elements to column with division.</p>
+        <p><code>.column-{1|2|3|4|5|6|7|8|9|10|11|12}</code> set elements to column with division.</p>
         <p><code>.flex</code> create a flex container, can use <code>.row</code> or <code>.column</code> to fix elements direction.</p>
         <p><code>.warp</code> add breakline to flex row.</p>
         <p><code>.justfy-contents-{center|end|start|between|evenly|around}</code> align element on flex grid.</p>
@@ -205,10 +205,10 @@
           </code></pre>
 
           <a href="" class="button">Link Button</a>
-          <button>button</button>
-          <button class="success">Button SUccess</button>
-          <button class="outline danger">Button Danger Outline</button>
-          <button disabled="disabled">Button Disabled</button>
+          <button class="button">button</button>
+          <button class="button success">Button Success</button>
+          <button class="button outline danger">Button Danger Outline</button>
+          <button disabled="disabled" class="button">Button Disabled</button>
         </section>
 
         <section>
@@ -470,34 +470,39 @@
     &lt;section class=<span class='text-danger'>"content bg-light bb"</span>&gt;
       &lt;article class=<span class='text-danger'>"item active"</span>&gt;
         &lt;div class=<span class='text-danger'>"row flex"</span>&gt;
-          &lt;div class=<span class='text-danger'>"text-center column-10"</span> style=<span class='text-danger'>"height: 430px;"</span>&gt;
+          &lt;div class=<span class='text-danger'>"text-center column-12"</span> style=<span class='text-danger'>"height: 430px;"</span>&gt;
             &lt;h1 class=<span class='text-danger'>"w-100"</span> style=<span class='text-danger'>"line-height: 430px; text-transform: uppercase;"</span>&gt;Item 1&lt;/h1&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/article&gt;
       &lt;article class=<span class='text-danger'>"item"</span>&gt;
         &lt;div class=<span class='text-danger'>"row flex"</span>&gt;
-          &lt;div class=<span class='text-danger'>"text-center column-10"</span> style=<span class='text-danger'>"height: 430px;"</span>&gt;
+          &lt;div class=<span class='text-danger'>"text-center column-12"</span> style=<span class='text-danger'>"height: 430px;"</span>&gt;
             &lt;h1 class=<span class='text-danger'>"w-100"</span> style=<span class='text-danger'>"line-height: 430px; text-transform: uppercase;"</span>&gt;Item 2&lt;/h1&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/article&gt;
     &lt;/section&gt;
+    <span class='text-success'>&lt;!-- add scroll button to carousel, this function is optional --&gt;</span>
+    &lt;button class="left" onclick="carousel.prev()"&gt;&lt;/button&gt;
+    &lt;button class="right" onclick="carousel.next()"&gt;&lt;/button&gt;
   &lt;/div&gt;
           </code></pre>
 
           <div class="carousel" data-transition="opacity" id="carousel">
+            <button class="left" onclick="carousel.prev()"></button>
+            <button class="right" onclick="carousel.next()"></button>
             <section class="content bg-light bb">
               <article class="item active">
                 <div class="row flex">
-                  <div class="text-center column-10" style="height: 430px;">
+                  <div class="text-center column-12" style="height: 430px;">
                     <h1 class="w-100" style="line-height: 430px; text-transform: uppercase;">Item 1</h1>
                   </div>
                 </div>
               </article>
               <article class="item">
                 <div class="row flex">
-                  <div class="text-center column-10" style="height: 430px;">
+                  <div class="text-center column-12" style="height: 430px;">
                     <h1 class="w-100" style="line-height: 430px; text-transform: uppercase;">Item 2</h1>
                   </div>
                 </div>
@@ -518,13 +523,13 @@
         &lt;p class=<span class='text-danger'>"text-justify"</span>&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolores dolorum expedita et! Dignissimos, quisquam? Minima fuga temporibus pariatur possimus perferendis consectetur tempora soluta voluptate atque. Dicta aut accusantium possimus.&lt;/p&gt;
       &lt;/div&gt;
       &lt;div class=<span class='text-danger'>"footer text-end"</span>&gt;
-        &lt;button class=<span class='text-danger'>"danger outline" onclick="modal.hide()"</span>&gt;Close&lt;/button&gt;
+        &lt;button class=<span class='text-danger'>"button danger outline" onclick="modal.hide()"</span>&gt;Close&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
           </code></pre>
 
-          <button onclick="modal.show()">Show Modal</button>
+          <button class="button" onclick="modal.show()">Show Modal</button>
           <div class="modal" id="modal">
             <div class="card bg-light w-50">
               <div class="header">
@@ -534,7 +539,7 @@
                 <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates dolores dolorum expedita et! Dignissimos, quisquam? Minima fuga temporibus pariatur possimus perferendis consectetur tempora soluta voluptate atque. Dicta aut accusantium possimus.</p>
               </div>
               <div class="footer text-end">
-                <button class="danger outline" onclick="modal.hide()">Close</button>
+                <button class="button danger outline" onclick="modal.hide()">Close</button>
               </div>
             </div>
           </div>

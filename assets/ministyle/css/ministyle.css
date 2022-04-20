@@ -62,6 +62,14 @@
   background-color: #212529 !important;
   color: #f8f9fa !important; }
 
+.bg-muted {
+  background-color: #959595 !important;
+  color: #f8f9fa !important; }
+
+.bg-hover-muted:hover {
+  background-color: #959595 !important;
+  color: #f8f9fa !important; }
+
 .bg-lighten-primary {
   background-color: #d6e3fa !important;
   color: #212529 !important; }
@@ -205,6 +213,12 @@
 
 .text-hover-dark:hover {
   color: #212529 !important; }
+
+.text-muted {
+  color: #959595 !important; }
+
+.text-hover-muted:hover {
+  color: #959595 !important; }
 
 .clearfix:after {
   clear: both;
@@ -553,8 +567,7 @@ blockquote {
   blockquote *:last-child {
     margin-bottom: 0; }
 
-.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
-  border: 0.1rem solid;
+.button {
   background-color: #6495ed;
   border: 0.1rem solid #6495ed;
   border-radius: 0.4rem;
@@ -569,160 +582,178 @@ blockquote {
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap; }
-  .button.outline, button.outline, input[type="button"].outline, input[type="reset"].outline, input[type="submit"].outline {
+  .button.outline {
     background-color: transparent !important;
     border: 0.1rem solid #6495ed;
     color: #6495ed; }
-  .button:not([disabled]):focus, .button:not([disabled]):hover, button:not([disabled]):focus, button:not([disabled]):hover, input[type="button"]:not([disabled]):focus, input[type="button"]:not([disabled]):hover, input[type="reset"]:not([disabled]):focus, input[type="reset"]:not([disabled]):hover, input[type="submit"]:not([disabled]):focus, input[type="submit"]:not([disabled]):hover {
+  .button:not([disabled]):focus, .button:not([disabled]):hover {
     background-color: #a9c4f5 !important;
     outline: 0; }
-  .button:not([disabled]):active, button:not([disabled]):active, input[type="button"]:not([disabled]):active, input[type="reset"]:not([disabled]):active, input[type="submit"]:not([disabled]):active {
+  .button:not([disabled]):active {
     background-color: #4d85ea !important; }
-  .button.primary:not([disabled]), button.primary:not([disabled]), input[type="button"].primary:not([disabled]), input[type="reset"].primary:not([disabled]), input[type="submit"].primary:not([disabled]) {
+  .button.primary:not([disabled]) {
     background-color: #6495ed !important;
     color: #f8f9fa;
     border-color: #1f66e5 !important; }
-    .button.primary:not([disabled]):focus, .button.primary:not([disabled]):hover, button.primary:not([disabled]):focus, button.primary:not([disabled]):hover, input[type="button"].primary:not([disabled]):focus, input[type="button"].primary:not([disabled]):hover, input[type="reset"].primary:not([disabled]):focus, input[type="reset"].primary:not([disabled]):hover, input[type="submit"].primary:not([disabled]):focus, input[type="submit"].primary:not([disabled]):hover {
+    .button.primary:not([disabled]):focus, .button.primary:not([disabled]):hover {
       background-color: #a9c4f5 !important;
       outline: 0; }
-    .button.primary:not([disabled]):active, button.primary:not([disabled]):active, input[type="button"].primary:not([disabled]):active, input[type="reset"].primary:not([disabled]):active, input[type="submit"].primary:not([disabled]):active {
+    .button.primary:not([disabled]):active {
       background-color: #4d85ea !important; }
-    .button.primary:not([disabled]).outline, button.primary:not([disabled]).outline, input[type="button"].primary:not([disabled]).outline, input[type="reset"].primary:not([disabled]).outline, input[type="submit"].primary:not([disabled]).outline {
+    .button.primary:not([disabled]).outline {
       background-color: transparent !important;
       border-color: #6495ed !important;
       color: #6495ed !important; }
-      .button.primary:not([disabled]).outline:focus, .button.primary:not([disabled]).outline:hover, button.primary:not([disabled]).outline:focus, button.primary:not([disabled]).outline:hover, input[type="button"].primary:not([disabled]).outline:focus, input[type="button"].primary:not([disabled]).outline:hover, input[type="reset"].primary:not([disabled]).outline:focus, input[type="reset"].primary:not([disabled]).outline:hover, input[type="submit"].primary:not([disabled]).outline:focus, input[type="submit"].primary:not([disabled]).outline:hover {
+      .button.primary:not([disabled]).outline:focus, .button.primary:not([disabled]).outline:hover {
         background-color: #a9c4f5 !important;
         outline: 0; }
-      .button.primary:not([disabled]).outline:active, button.primary:not([disabled]).outline:active, input[type="button"].primary:not([disabled]).outline:active, input[type="reset"].primary:not([disabled]).outline:active, input[type="submit"].primary:not([disabled]).outline:active {
+      .button.primary:not([disabled]).outline:active {
         background-color: #4d85ea !important; }
-  .button.success:not([disabled]), button.success:not([disabled]), input[type="button"].success:not([disabled]), input[type="reset"].success:not([disabled]), input[type="submit"].success:not([disabled]) {
+  .button.success:not([disabled]) {
     background-color: #43ac7c !important;
     color: #f8f9fa;
     border-color: #2e7554 !important; }
-    .button.success:not([disabled]):focus, .button.success:not([disabled]):hover, button.success:not([disabled]):focus, button.success:not([disabled]):hover, input[type="button"].success:not([disabled]):focus, input[type="button"].success:not([disabled]):hover, input[type="reset"].success:not([disabled]):focus, input[type="reset"].success:not([disabled]):hover, input[type="submit"].success:not([disabled]):focus, input[type="submit"].success:not([disabled]):hover {
+    .button.success:not([disabled]):focus, .button.success:not([disabled]):hover {
       background-color: #73c8a1 !important;
       outline: 0; }
-    .button.success:not([disabled]):active, button.success:not([disabled]):active, input[type="button"].success:not([disabled]):active, input[type="reset"].success:not([disabled]):active, input[type="submit"].success:not([disabled]):active {
+    .button.success:not([disabled]):active {
       background-color: #3c9a6f !important; }
-    .button.success:not([disabled]).outline, button.success:not([disabled]).outline, input[type="button"].success:not([disabled]).outline, input[type="reset"].success:not([disabled]).outline, input[type="submit"].success:not([disabled]).outline {
+    .button.success:not([disabled]).outline {
       background-color: transparent !important;
       border-color: #43ac7c !important;
       color: #43ac7c !important; }
-      .button.success:not([disabled]).outline:focus, .button.success:not([disabled]).outline:hover, button.success:not([disabled]).outline:focus, button.success:not([disabled]).outline:hover, input[type="button"].success:not([disabled]).outline:focus, input[type="button"].success:not([disabled]).outline:hover, input[type="reset"].success:not([disabled]).outline:focus, input[type="reset"].success:not([disabled]).outline:hover, input[type="submit"].success:not([disabled]).outline:focus, input[type="submit"].success:not([disabled]).outline:hover {
+      .button.success:not([disabled]).outline:focus, .button.success:not([disabled]).outline:hover {
         background-color: #73c8a1 !important;
         outline: 0; }
-      .button.success:not([disabled]).outline:active, button.success:not([disabled]).outline:active, input[type="button"].success:not([disabled]).outline:active, input[type="reset"].success:not([disabled]).outline:active, input[type="submit"].success:not([disabled]).outline:active {
+      .button.success:not([disabled]).outline:active {
         background-color: #3c9a6f !important; }
-  .button.danger:not([disabled]), button.danger:not([disabled]), input[type="button"].danger:not([disabled]), input[type="reset"].danger:not([disabled]), input[type="submit"].danger:not([disabled]) {
+  .button.danger:not([disabled]) {
     background-color: #cc5656 !important;
     color: #f8f9fa;
     border-color: #a43131 !important; }
-    .button.danger:not([disabled]):focus, .button.danger:not([disabled]):hover, button.danger:not([disabled]):focus, button.danger:not([disabled]):hover, input[type="button"].danger:not([disabled]):focus, input[type="button"].danger:not([disabled]):hover, input[type="reset"].danger:not([disabled]):focus, input[type="reset"].danger:not([disabled]):hover, input[type="submit"].danger:not([disabled]):focus, input[type="submit"].danger:not([disabled]):hover {
+    .button.danger:not([disabled]):focus, .button.danger:not([disabled]):hover {
       background-color: #de9191 !important;
       outline: 0; }
-    .button.danger:not([disabled]):active, button.danger:not([disabled]):active, input[type="button"].danger:not([disabled]):active, input[type="reset"].danger:not([disabled]):active, input[type="submit"].danger:not([disabled]):active {
+    .button.danger:not([disabled]):active {
       background-color: #c64242 !important; }
-    .button.danger:not([disabled]).outline, button.danger:not([disabled]).outline, input[type="button"].danger:not([disabled]).outline, input[type="reset"].danger:not([disabled]).outline, input[type="submit"].danger:not([disabled]).outline {
+    .button.danger:not([disabled]).outline {
       background-color: transparent !important;
       border-color: #cc5656 !important;
       color: #cc5656 !important; }
-      .button.danger:not([disabled]).outline:focus, .button.danger:not([disabled]).outline:hover, button.danger:not([disabled]).outline:focus, button.danger:not([disabled]).outline:hover, input[type="button"].danger:not([disabled]).outline:focus, input[type="button"].danger:not([disabled]).outline:hover, input[type="reset"].danger:not([disabled]).outline:focus, input[type="reset"].danger:not([disabled]).outline:hover, input[type="submit"].danger:not([disabled]).outline:focus, input[type="submit"].danger:not([disabled]).outline:hover {
+      .button.danger:not([disabled]).outline:focus, .button.danger:not([disabled]).outline:hover {
         background-color: #de9191 !important;
         outline: 0; }
-      .button.danger:not([disabled]).outline:active, button.danger:not([disabled]).outline:active, input[type="button"].danger:not([disabled]).outline:active, input[type="reset"].danger:not([disabled]).outline:active, input[type="submit"].danger:not([disabled]).outline:active {
+      .button.danger:not([disabled]).outline:active {
         background-color: #c64242 !important; }
-  .button.warning:not([disabled]), button.warning:not([disabled]), input[type="button"].warning:not([disabled]), input[type="reset"].warning:not([disabled]), input[type="submit"].warning:not([disabled]) {
+  .button.warning:not([disabled]) {
     background-color: #f0ae58 !important;
     color: #f8f9fa;
     border-color: #e78c15 !important; }
-    .button.warning:not([disabled]):focus, .button.warning:not([disabled]):hover, button.warning:not([disabled]):focus, button.warning:not([disabled]):hover, input[type="button"].warning:not([disabled]):focus, input[type="button"].warning:not([disabled]):hover, input[type="reset"].warning:not([disabled]):focus, input[type="reset"].warning:not([disabled]):hover, input[type="submit"].warning:not([disabled]):focus, input[type="submit"].warning:not([disabled]):hover {
+    .button.warning:not([disabled]):focus, .button.warning:not([disabled]):hover {
       background-color: #f6d09e !important;
       outline: 0; }
-    .button.warning:not([disabled]):active, button.warning:not([disabled]):active, input[type="button"].warning:not([disabled]):active, input[type="reset"].warning:not([disabled]):active, input[type="submit"].warning:not([disabled]):active {
+    .button.warning:not([disabled]):active {
       background-color: #eea341 !important; }
-    .button.warning:not([disabled]).outline, button.warning:not([disabled]).outline, input[type="button"].warning:not([disabled]).outline, input[type="reset"].warning:not([disabled]).outline, input[type="submit"].warning:not([disabled]).outline {
+    .button.warning:not([disabled]).outline {
       background-color: transparent !important;
       border-color: #f0ae58 !important;
       color: #f0ae58 !important; }
-      .button.warning:not([disabled]).outline:focus, .button.warning:not([disabled]).outline:hover, button.warning:not([disabled]).outline:focus, button.warning:not([disabled]).outline:hover, input[type="button"].warning:not([disabled]).outline:focus, input[type="button"].warning:not([disabled]).outline:hover, input[type="reset"].warning:not([disabled]).outline:focus, input[type="reset"].warning:not([disabled]).outline:hover, input[type="submit"].warning:not([disabled]).outline:focus, input[type="submit"].warning:not([disabled]).outline:hover {
+      .button.warning:not([disabled]).outline:focus, .button.warning:not([disabled]).outline:hover {
         background-color: #f6d09e !important;
         outline: 0; }
-      .button.warning:not([disabled]).outline:active, button.warning:not([disabled]).outline:active, input[type="button"].warning:not([disabled]).outline:active, input[type="reset"].warning:not([disabled]).outline:active, input[type="submit"].warning:not([disabled]).outline:active {
+      .button.warning:not([disabled]).outline:active {
         background-color: #eea341 !important; }
-  .button.info:not([disabled]), button.info:not([disabled]), input[type="button"].info:not([disabled]), input[type="reset"].info:not([disabled]), input[type="submit"].info:not([disabled]) {
+  .button.info:not([disabled]) {
     background-color: #78dcf0 !important;
     color: #f8f9fa;
     border-color: #33cae8 !important; }
-    .button.info:not([disabled]):focus, .button.info:not([disabled]):hover, button.info:not([disabled]):focus, button.info:not([disabled]):hover, input[type="button"].info:not([disabled]):focus, input[type="button"].info:not([disabled]):hover, input[type="reset"].info:not([disabled]):focus, input[type="reset"].info:not([disabled]):hover, input[type="submit"].info:not([disabled]):focus, input[type="submit"].info:not([disabled]):hover {
+    .button.info:not([disabled]):focus, .button.info:not([disabled]):hover {
       background-color: #bdeef8 !important;
       outline: 0; }
-    .button.info:not([disabled]):active, button.info:not([disabled]):active, input[type="button"].info:not([disabled]):active, input[type="reset"].info:not([disabled]):active, input[type="submit"].info:not([disabled]):active {
+    .button.info:not([disabled]):active {
       background-color: #61d6ed !important; }
-    .button.info:not([disabled]).outline, button.info:not([disabled]).outline, input[type="button"].info:not([disabled]).outline, input[type="reset"].info:not([disabled]).outline, input[type="submit"].info:not([disabled]).outline {
+    .button.info:not([disabled]).outline {
       background-color: transparent !important;
       border-color: #78dcf0 !important;
       color: #78dcf0 !important; }
-      .button.info:not([disabled]).outline:focus, .button.info:not([disabled]).outline:hover, button.info:not([disabled]).outline:focus, button.info:not([disabled]).outline:hover, input[type="button"].info:not([disabled]).outline:focus, input[type="button"].info:not([disabled]).outline:hover, input[type="reset"].info:not([disabled]).outline:focus, input[type="reset"].info:not([disabled]).outline:hover, input[type="submit"].info:not([disabled]).outline:focus, input[type="submit"].info:not([disabled]).outline:hover {
+      .button.info:not([disabled]).outline:focus, .button.info:not([disabled]).outline:hover {
         background-color: #bdeef8 !important;
         outline: 0; }
-      .button.info:not([disabled]).outline:active, button.info:not([disabled]).outline:active, input[type="button"].info:not([disabled]).outline:active, input[type="reset"].info:not([disabled]).outline:active, input[type="submit"].info:not([disabled]).outline:active {
+      .button.info:not([disabled]).outline:active {
         background-color: #61d6ed !important; }
-  .button.secondary:not([disabled]), button.secondary:not([disabled]), input[type="button"].secondary:not([disabled]), input[type="reset"].secondary:not([disabled]), input[type="submit"].secondary:not([disabled]) {
+  .button.secondary:not([disabled]) {
     background-color: #606c76 !important;
     color: #f8f9fa;
     border-color: #3e454c !important; }
-    .button.secondary:not([disabled]):focus, .button.secondary:not([disabled]):hover, button.secondary:not([disabled]):focus, button.secondary:not([disabled]):hover, input[type="button"].secondary:not([disabled]):focus, input[type="button"].secondary:not([disabled]):hover, input[type="reset"].secondary:not([disabled]):focus, input[type="reset"].secondary:not([disabled]):hover, input[type="submit"].secondary:not([disabled]):focus, input[type="submit"].secondary:not([disabled]):hover {
+    .button.secondary:not([disabled]):focus, .button.secondary:not([disabled]):hover {
       background-color: #86929d !important;
       outline: 0; }
-    .button.secondary:not([disabled]):active, button.secondary:not([disabled]):active, input[type="button"].secondary:not([disabled]):active, input[type="reset"].secondary:not([disabled]):active, input[type="submit"].secondary:not([disabled]):active {
+    .button.secondary:not([disabled]):active {
       background-color: #555f68 !important; }
-    .button.secondary:not([disabled]).outline, button.secondary:not([disabled]).outline, input[type="button"].secondary:not([disabled]).outline, input[type="reset"].secondary:not([disabled]).outline, input[type="submit"].secondary:not([disabled]).outline {
+    .button.secondary:not([disabled]).outline {
       background-color: transparent !important;
       border-color: #606c76 !important;
       color: #606c76 !important; }
-      .button.secondary:not([disabled]).outline:focus, .button.secondary:not([disabled]).outline:hover, button.secondary:not([disabled]).outline:focus, button.secondary:not([disabled]).outline:hover, input[type="button"].secondary:not([disabled]).outline:focus, input[type="button"].secondary:not([disabled]).outline:hover, input[type="reset"].secondary:not([disabled]).outline:focus, input[type="reset"].secondary:not([disabled]).outline:hover, input[type="submit"].secondary:not([disabled]).outline:focus, input[type="submit"].secondary:not([disabled]).outline:hover {
+      .button.secondary:not([disabled]).outline:focus, .button.secondary:not([disabled]).outline:hover {
         background-color: #86929d !important;
         outline: 0; }
-      .button.secondary:not([disabled]).outline:active, button.secondary:not([disabled]).outline:active, input[type="button"].secondary:not([disabled]).outline:active, input[type="reset"].secondary:not([disabled]).outline:active, input[type="submit"].secondary:not([disabled]).outline:active {
+      .button.secondary:not([disabled]).outline:active {
         background-color: #555f68 !important; }
-  .button.light:not([disabled]), button.light:not([disabled]), input[type="button"].light:not([disabled]), input[type="reset"].light:not([disabled]), input[type="submit"].light:not([disabled]) {
+  .button.light:not([disabled]) {
     background-color: #f8f9fa !important;
     color: #f8f9fa;
     border-color: #cbd3da !important; }
-    .button.light:not([disabled]):focus, .button.light:not([disabled]):hover, button.light:not([disabled]):focus, button.light:not([disabled]):hover, input[type="button"].light:not([disabled]):focus, input[type="button"].light:not([disabled]):hover, input[type="reset"].light:not([disabled]):focus, input[type="reset"].light:not([disabled]):hover, input[type="submit"].light:not([disabled]):focus, input[type="submit"].light:not([disabled]):hover {
+    .button.light:not([disabled]):focus, .button.light:not([disabled]):hover {
       background-color: white !important;
       outline: 0; }
-    .button.light:not([disabled]):active, button.light:not([disabled]):active, input[type="button"].light:not([disabled]):active, input[type="reset"].light:not([disabled]):active, input[type="submit"].light:not([disabled]):active {
+    .button.light:not([disabled]):active {
       background-color: #e9ecef !important; }
-    .button.light:not([disabled]).outline, button.light:not([disabled]).outline, input[type="button"].light:not([disabled]).outline, input[type="reset"].light:not([disabled]).outline, input[type="submit"].light:not([disabled]).outline {
+    .button.light:not([disabled]).outline {
       background-color: transparent !important;
       border-color: #f8f9fa !important;
       color: #f8f9fa !important; }
-      .button.light:not([disabled]).outline:focus, .button.light:not([disabled]).outline:hover, button.light:not([disabled]).outline:focus, button.light:not([disabled]).outline:hover, input[type="button"].light:not([disabled]).outline:focus, input[type="button"].light:not([disabled]).outline:hover, input[type="reset"].light:not([disabled]).outline:focus, input[type="reset"].light:not([disabled]).outline:hover, input[type="submit"].light:not([disabled]).outline:focus, input[type="submit"].light:not([disabled]).outline:hover {
+      .button.light:not([disabled]).outline:focus, .button.light:not([disabled]).outline:hover {
         background-color: white !important;
         outline: 0; }
-      .button.light:not([disabled]).outline:active, button.light:not([disabled]).outline:active, input[type="button"].light:not([disabled]).outline:active, input[type="reset"].light:not([disabled]).outline:active, input[type="submit"].light:not([disabled]).outline:active {
+      .button.light:not([disabled]).outline:active {
         background-color: #e9ecef !important; }
-  .button.dark:not([disabled]), button.dark:not([disabled]), input[type="button"].dark:not([disabled]), input[type="reset"].dark:not([disabled]), input[type="submit"].dark:not([disabled]) {
+  .button.dark:not([disabled]) {
     background-color: #212529 !important;
     color: #f8f9fa;
     border-color: black !important; }
-    .button.dark:not([disabled]):focus, .button.dark:not([disabled]):hover, button.dark:not([disabled]):focus, button.dark:not([disabled]):hover, input[type="button"].dark:not([disabled]):focus, input[type="button"].dark:not([disabled]):hover, input[type="reset"].dark:not([disabled]):focus, input[type="reset"].dark:not([disabled]):hover, input[type="submit"].dark:not([disabled]):focus, input[type="submit"].dark:not([disabled]):hover {
+    .button.dark:not([disabled]):focus, .button.dark:not([disabled]):hover {
       background-color: #434b53 !important;
       outline: 0; }
-    .button.dark:not([disabled]):active, button.dark:not([disabled]):active, input[type="button"].dark:not([disabled]):active, input[type="reset"].dark:not([disabled]):active, input[type="submit"].dark:not([disabled]):active {
+    .button.dark:not([disabled]):active {
       background-color: #16181b !important; }
-    .button.dark:not([disabled]).outline, button.dark:not([disabled]).outline, input[type="button"].dark:not([disabled]).outline, input[type="reset"].dark:not([disabled]).outline, input[type="submit"].dark:not([disabled]).outline {
+    .button.dark:not([disabled]).outline {
       background-color: transparent !important;
       border-color: #212529 !important;
       color: #212529 !important; }
-      .button.dark:not([disabled]).outline:focus, .button.dark:not([disabled]).outline:hover, button.dark:not([disabled]).outline:focus, button.dark:not([disabled]).outline:hover, input[type="button"].dark:not([disabled]).outline:focus, input[type="button"].dark:not([disabled]).outline:hover, input[type="reset"].dark:not([disabled]).outline:focus, input[type="reset"].dark:not([disabled]).outline:hover, input[type="submit"].dark:not([disabled]).outline:focus, input[type="submit"].dark:not([disabled]).outline:hover {
+      .button.dark:not([disabled]).outline:focus, .button.dark:not([disabled]).outline:hover {
         background-color: #434b53 !important;
         outline: 0; }
-      .button.dark:not([disabled]).outline:active, button.dark:not([disabled]).outline:active, input[type="button"].dark:not([disabled]).outline:active, input[type="reset"].dark:not([disabled]).outline:active, input[type="submit"].dark:not([disabled]).outline:active {
+      .button.dark:not([disabled]).outline:active {
         background-color: #16181b !important; }
-  .button[disabled], button[disabled], input[type="button"][disabled], input[type="reset"][disabled], input[type="submit"][disabled] {
+  .button.muted:not([disabled]) {
+    background-color: #959595 !important;
+    color: #f8f9fa;
+    border-color: #6f6f6f !important; }
+    .button.muted:not([disabled]):focus, .button.muted:not([disabled]):hover {
+      background-color: #bbbbbb !important;
+      outline: 0; }
+    .button.muted:not([disabled]):active {
+      background-color: #888888 !important; }
+    .button.muted:not([disabled]).outline {
+      background-color: transparent !important;
+      border-color: #959595 !important;
+      color: #959595 !important; }
+      .button.muted:not([disabled]).outline:focus, .button.muted:not([disabled]).outline:hover {
+        background-color: #bbbbbb !important;
+        outline: 0; }
+      .button.muted:not([disabled]).outline:active {
+        background-color: #888888 !important; }
+  .button[disabled] {
     cursor: default;
     background-color: #606c76;
     border-color: #606c76;
@@ -901,8 +932,9 @@ input[type="radio"].switch {
   overflow: hidden; }
   .box-group > * {
     float: left;
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: auto;
     margin: 0px !important;
     border-radius: 0px !important;
     display: block;
@@ -921,209 +953,140 @@ body > .content, body > main > .content {
   .row:not(.flex) > [class*="column-"] {
     float: left; }
 
-.row,
-.flex {
+.row, .flex {
   padding: 0px;
   width: 100%; }
-  .row > [class*="column-"],
-  .flex > [class*="column-"] {
-    padding: 0px 0rem;
+  .row:not(.no-column-padding) > [class*="column-"], .flex:not(.no-column-padding) > [class*="column-"] {
+    padding: 0rem 0.6rem;
     display: block;
     margin: 0px;
     border: 0px; }
-    .row > [class*="column-"]:first-child,
-    .flex > [class*="column-"]:first-child {
-      padding-left: 0px; }
-    .row > [class*="column-"]:last-child,
-    .flex > [class*="column-"]:last-child {
-      padding-right: 0px; }
   @media only screen and (max-width: 576px) {
-    .row > [class*="column-"],
-    .flex > [class*="column-"] {
+    .row > [class*="column-"], .flex > [class*="column-"] {
       width: 100% !important; } }
-  .row > .column-1,
-  .flex > .column-1 {
-    width: 10%; }
-  .row > .column-2,
-  .flex > .column-2 {
-    width: 20%; }
-  .row > .column-2-5,
-  .flex > .column-2-5 {
+  .row > .column-1, .flex > .column-1 {
+    width: 8.3333333333%; }
+  .row > .column-2, .flex > .column-2 {
+    width: 16.6666666667%; }
+  .row > .column-3, .flex > .column-3 {
     width: 25%; }
-  .row > .column-3,
-  .flex > .column-3 {
-    width: 30%; }
-  .row > .column-4,
-  .flex > .column-4 {
-    width: 40%; }
-  .row > .column-5,
-  .flex > .column-5 {
+  .row > .column-4, .flex > .column-4 {
+    width: 33.3333333333%; }
+  .row > .column-5, .flex > .column-5 {
+    width: 41.6666666667%; }
+  .row > .column-6, .flex > .column-6 {
     width: 50%; }
-  .row > .column-6,
-  .flex > .column-6 {
-    width: 60%; }
-  .row > .column-7,
-  .flex > .column-7 {
-    width: 70%; }
-  .row > .column-7-5,
-  .flex > .column-7-5 {
+  .row > .column-7, .flex > .column-7 {
+    width: 58.3333333333%; }
+  .row > .column-8, .flex > .column-8 {
+    width: 66.6666666667%; }
+  .row > .column-9, .flex > .column-9 {
     width: 75%; }
-  .row > .column-8,
-  .flex > .column-8 {
-    width: 80%; }
-  .row > .column-9,
-  .flex > .column-9 {
-    width: 90%; }
-  .row > .column-10,
-  .flex > .column-10 {
+  .row > .column-10, .flex > .column-10 {
+    width: 83.3333333333%; }
+  .row > .column-11, .flex > .column-11 {
+    width: 91.6666666667%; }
+  .row > .column-12, .flex > .column-12 {
     width: 100%; }
   @media only screen and (min-width: 576px) {
-    .row > .column-sm-1,
-    .flex > .column-sm-1 {
-      width: 10%; }
-    .row > .column-sm-2,
-    .flex > .column-sm-2 {
-      width: 20%; }
-    .row > .column-sm-2-5,
-    .flex > .column-sm-2-5 {
+    .row > .column-sm-1, .flex > .column-sm-1 {
+      width: 8.3333333333%; }
+    .row > .column-sm-2, .flex > .column-sm-2 {
+      width: 16.6666666667%; }
+    .row > .column-sm-3, .flex > .column-sm-3 {
       width: 25%; }
-    .row > .column-sm-3,
-    .flex > .column-sm-3 {
-      width: 30%; }
-    .row > .column-sm-4,
-    .flex > .column-sm-4 {
-      width: 40%; }
-    .row > .column-sm-5,
-    .flex > .column-sm-5 {
+    .row > .column-sm-4, .flex > .column-sm-4 {
+      width: 33.3333333333%; }
+    .row > .column-sm-5, .flex > .column-sm-5 {
+      width: 41.6666666667%; }
+    .row > .column-sm-6, .flex > .column-sm-6 {
       width: 50%; }
-    .row > .column-sm-6,
-    .flex > .column-sm-6 {
-      width: 60%; }
-    .row > .column-sm-7,
-    .flex > .column-sm-7 {
-      width: 70%; }
-    .row > .column-sm-7-5,
-    .flex > .column-sm-7-5 {
+    .row > .column-sm-7, .flex > .column-sm-7 {
+      width: 58.3333333333%; }
+    .row > .column-sm-8, .flex > .column-sm-8 {
+      width: 66.6666666667%; }
+    .row > .column-sm-9, .flex > .column-sm-9 {
       width: 75%; }
-    .row > .column-sm-8,
-    .flex > .column-sm-8 {
-      width: 80%; }
-    .row > .column-sm-9,
-    .flex > .column-sm-9 {
-      width: 90%; }
-    .row > .column-sm-10,
-    .flex > .column-sm-10 {
+    .row > .column-sm-10, .flex > .column-sm-10 {
+      width: 83.3333333333%; }
+    .row > .column-sm-11, .flex > .column-sm-11 {
+      width: 91.6666666667%; }
+    .row > .column-sm-12, .flex > .column-sm-12 {
       width: 100%; } }
   @media only screen and (min-width: 768px) {
-    .row > .column-md-1,
-    .flex > .column-md-1 {
-      width: 10%; }
-    .row > .column-md-2,
-    .flex > .column-md-2 {
-      width: 20%; }
-    .row > .column-md-2-5,
-    .flex > .column-md-2-5 {
+    .row > .column-md-1, .flex > .column-md-1 {
+      width: 8.3333333333%; }
+    .row > .column-md-2, .flex > .column-md-2 {
+      width: 16.6666666667%; }
+    .row > .column-md-3, .flex > .column-md-3 {
       width: 25%; }
-    .row > .column-md-3,
-    .flex > .column-md-3 {
-      width: 30%; }
-    .row > .column-md-4,
-    .flex > .column-md-4 {
-      width: 40%; }
-    .row > .column-md-5,
-    .flex > .column-md-5 {
+    .row > .column-md-4, .flex > .column-md-4 {
+      width: 33.3333333333%; }
+    .row > .column-md-5, .flex > .column-md-5 {
+      width: 41.6666666667%; }
+    .row > .column-md-6, .flex > .column-md-6 {
       width: 50%; }
-    .row > .column-md-6,
-    .flex > .column-md-6 {
-      width: 60%; }
-    .row > .column-md-7,
-    .flex > .column-md-7 {
-      width: 70%; }
-    .row > .column-md-7-5,
-    .flex > .column-md-7-5 {
+    .row > .column-md-7, .flex > .column-md-7 {
+      width: 58.3333333333%; }
+    .row > .column-md-8, .flex > .column-md-8 {
+      width: 66.6666666667%; }
+    .row > .column-md-9, .flex > .column-md-9 {
       width: 75%; }
-    .row > .column-md-8,
-    .flex > .column-md-8 {
-      width: 80%; }
-    .row > .column-md-9,
-    .flex > .column-md-9 {
-      width: 90%; }
-    .row > .column-md-10,
-    .flex > .column-md-10 {
+    .row > .column-md-10, .flex > .column-md-10 {
+      width: 83.3333333333%; }
+    .row > .column-md-11, .flex > .column-md-11 {
+      width: 91.6666666667%; }
+    .row > .column-md-12, .flex > .column-md-12 {
       width: 100%; } }
   @media only screen and (min-width: 992px) {
-    .row > .column-lg-1,
-    .flex > .column-lg-1 {
-      width: 10%; }
-    .row > .column-lg-2,
-    .flex > .column-lg-2 {
-      width: 20%; }
-    .row > .column-lg-2-5,
-    .flex > .column-lg-2-5 {
+    .row > .column-lg-1, .flex > .column-lg-1 {
+      width: 8.3333333333%; }
+    .row > .column-lg-2, .flex > .column-lg-2 {
+      width: 16.6666666667%; }
+    .row > .column-lg-3, .flex > .column-lg-3 {
       width: 25%; }
-    .row > .column-lg-3,
-    .flex > .column-lg-3 {
-      width: 30%; }
-    .row > .column-lg-4,
-    .flex > .column-lg-4 {
-      width: 40%; }
-    .row > .column-lg-5,
-    .flex > .column-lg-5 {
+    .row > .column-lg-4, .flex > .column-lg-4 {
+      width: 33.3333333333%; }
+    .row > .column-lg-5, .flex > .column-lg-5 {
+      width: 41.6666666667%; }
+    .row > .column-lg-6, .flex > .column-lg-6 {
       width: 50%; }
-    .row > .column-lg-6,
-    .flex > .column-lg-6 {
-      width: 60%; }
-    .row > .column-lg-7,
-    .flex > .column-lg-7 {
-      width: 70%; }
-    .row > .column-lg-7-5,
-    .flex > .column-lg-7-5 {
+    .row > .column-lg-7, .flex > .column-lg-7 {
+      width: 58.3333333333%; }
+    .row > .column-lg-8, .flex > .column-lg-8 {
+      width: 66.6666666667%; }
+    .row > .column-lg-9, .flex > .column-lg-9 {
       width: 75%; }
-    .row > .column-lg-8,
-    .flex > .column-lg-8 {
-      width: 80%; }
-    .row > .column-lg-9,
-    .flex > .column-lg-9 {
-      width: 90%; }
-    .row > .column-lg-10,
-    .flex > .column-lg-10 {
+    .row > .column-lg-10, .flex > .column-lg-10 {
+      width: 83.3333333333%; }
+    .row > .column-lg-11, .flex > .column-lg-11 {
+      width: 91.6666666667%; }
+    .row > .column-lg-12, .flex > .column-lg-12 {
       width: 100%; } }
   @media only screen and (min-width: 1200px) {
-    .row > .column-xl-1,
-    .flex > .column-xl-1 {
-      width: 10%; }
-    .row > .column-xl-2,
-    .flex > .column-xl-2 {
-      width: 20%; }
-    .row > .column-xl-2-5,
-    .flex > .column-xl-2-5 {
+    .row > .column-xl-1, .flex > .column-xl-1 {
+      width: 8.3333333333%; }
+    .row > .column-xl-2, .flex > .column-xl-2 {
+      width: 16.6666666667%; }
+    .row > .column-xl-3, .flex > .column-xl-3 {
       width: 25%; }
-    .row > .column-xl-3,
-    .flex > .column-xl-3 {
-      width: 30%; }
-    .row > .column-xl-4,
-    .flex > .column-xl-4 {
-      width: 40%; }
-    .row > .column-xl-5,
-    .flex > .column-xl-5 {
+    .row > .column-xl-4, .flex > .column-xl-4 {
+      width: 33.3333333333%; }
+    .row > .column-xl-5, .flex > .column-xl-5 {
+      width: 41.6666666667%; }
+    .row > .column-xl-6, .flex > .column-xl-6 {
       width: 50%; }
-    .row > .column-xl-6,
-    .flex > .column-xl-6 {
-      width: 60%; }
-    .row > .column-xl-7,
-    .flex > .column-xl-7 {
-      width: 70%; }
-    .row > .column-xl-7-5,
-    .flex > .column-xl-7-5 {
+    .row > .column-xl-7, .flex > .column-xl-7 {
+      width: 58.3333333333%; }
+    .row > .column-xl-8, .flex > .column-xl-8 {
+      width: 66.6666666667%; }
+    .row > .column-xl-9, .flex > .column-xl-9 {
       width: 75%; }
-    .row > .column-xl-8,
-    .flex > .column-xl-8 {
-      width: 80%; }
-    .row > .column-xl-9,
-    .flex > .column-xl-9 {
-      width: 90%; }
-    .row > .column-xl-10,
-    .flex > .column-xl-10 {
+    .row > .column-xl-10, .flex > .column-xl-10 {
+      width: 83.3333333333%; }
+    .row > .column-xl-11, .flex > .column-xl-11 {
+      width: 91.6666666667%; }
+    .row > .column-xl-12, .flex > .column-xl-12 {
       width: 100%; } }
 .flex {
   display: flex;
@@ -1142,7 +1105,7 @@ body > .content, body > main > .content {
   .flex.column-reverse {
     flex-direction: column-reverse; }
   @media only screen and (max-width: 576px) {
-    .flex {
+    .flex:not(.row) {
       flex-direction: column !important; } }
   @media only screen and (max-width: 576px) {
     .flex .column-reverse {
@@ -1216,6 +1179,10 @@ a {
     color: #212529; }
     a.dark:hover, a.dark:focus {
       color: #0a0c0d; }
+  a.muted {
+    color: #959595; }
+    a.muted:hover, a.muted:focus {
+      color: #7c7c7c; }
 
 dl, ol, ul {
   list-style: none;
@@ -2288,7 +2255,11 @@ table {
   display: block;
   overflow-x: auto;
   text-align: left;
-  width: 100%; }
+  width: 100%;
+  line-height: 1.0rem; }
+
+th {
+  text-transform: uppercase; }
 
 td, th {
   border-bottom: 0.1rem solid #e1e1e1;
@@ -2602,7 +2573,7 @@ nav.navbar {
       position: relative;
       top: 3vh;
       margin-bottom: 3vh;
-      height: 90vh; }
+      max-height: 90vh; }
 
 .alert {
   padding: 1rem;
@@ -2644,6 +2615,10 @@ nav.navbar {
     background-color: #65727e;
     color: #212529;
     border-color: #212529; }
+  .alert.muted {
+    background-color: #e2e2e2;
+    color: #959595;
+    border-color: #959595; }
 
 .badge {
   display: inline-block;
@@ -2677,6 +2652,9 @@ nav.navbar {
     color: #212529; }
   .badge.dark {
     background-color: #212529;
+    color: #f8f9fa; }
+  .badge.muted {
+    background-color: #959595;
     color: #f8f9fa; }
 
 .pagination {
@@ -2809,6 +2787,19 @@ nav.navbar {
         background-color: #212529; }
       .pagination.dark > *:hover > *, .pagination.dark > *:active > * {
         color: #f8f9fa; }
+  .pagination.muted {
+    border-color: #959595; }
+    .pagination.muted > * {
+      border-color: #959595;
+      transition: 0.6s; }
+      .pagination.muted > * > * {
+        color: #959595; }
+      .pagination.muted > *.active {
+        background-color: #959595; }
+      .pagination.muted > *:not(.disabled):hover {
+        background-color: #959595; }
+      .pagination.muted > *:hover > *, .pagination.muted > *:active > * {
+        color: #f8f9fa; }
 
 @-webkit-keyframes animation-open-1 {
   0% {
@@ -2910,28 +2901,55 @@ html[data-loading=true] .loading {
 
 @-webkit-keyframes animation-show {
   0% {
-    opacity: 0;
-    position: relative;
-    width: 100%; }
+    opacity: 0; }
   100% {
-    opacity: 1;
-    position: relative;
-    width: 100%; } }
+    opacity: 1; } }
 
 @keyframes animation-show {
   0% {
-    opacity: 0;
-    position: relative;
-    width: 100%; }
+    opacity: 0; }
   100% {
-    opacity: 1;
-    position: relative;
-    width: 100%; } }
+    opacity: 1; } }
+
+@-webkit-keyframes animation-right2left {
+  0% {
+    margin-left: 100%; }
+  100% {
+    margin-left: 0px; } }
+
+@keyframes animation-right2left {
+  0% {
+    margin-left: 100%; }
+  100% {
+    margin-left: 0px; } }
 
 .carousel {
   display: block;
   width: 100%;
-  overflow: auto; }
+  overflow: hidden;
+  position: relative; }
+  .carousel button {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 0px;
+    padding: 0px 3rem;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    z-index: 2;
+    background-size: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%; }
+    .carousel button:hover {
+      background-color: #00000041; }
+    .carousel button.left {
+      left: 0px;
+      background-image: url("/assets/ministyle/svg/angle-left-solid.svg"); }
+    .carousel button.right {
+      right: 0px;
+      background-image: url("/assets/ministyle/svg/angle-right-solid.svg"); }
   .carousel > .content {
     display: block;
     overflow: hidden;
@@ -2944,6 +2962,9 @@ html[data-loading=true] .loading {
 
 .carousel[data-transition="opacity"] > .content > *.active {
   animation: animation-show 2.5s; }
+
+.carousel[data-transition="right2left"] > .content > *.active {
+  animation: animation-right2left 1s; }
 
 .b {
   border: solid 1px #d0d0d0 !important; }
@@ -3075,9 +3096,11 @@ button.dropdown {
   margin: 0px;
   display: table ruby;
   content: "";
-  cursor: default; }
+  cursor: default;
+  border-radius: 0.25rem;
+  overflow: hidden; }
   button.dropdown > .label {
-    padding: 1.2rem 1.2rem;
+    padding: 0.9rem 1rem;
     display: block;
     float: left; }
   button.dropdown::after {

@@ -943,11 +943,12 @@ input[type="radio"].switch {
 
 body > .content, body > main > .content {
   margin: 0 auto;
-  max-width: 112rem;
   padding: 0 1rem;
   position: relative;
   width: 100%; }
-
+  @media only screen and (min-width: 768px) {
+    body > .content, body > main > .content {
+      max-width: 112rem; } }
 .row:not(.flex) {
   display: table; }
   .row:not(.flex) > [class*="column-"] {

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/dist/css/quartzo.css">
+  <link rel="icon" href="/dist/svg/quartzo.svg" type="image/x-ico">
+
+  <title>Quartzo Doc</title>
+</head>
+
+<body layout-rounded="" layout-transition="false">
+  <header class="bg-light">
+    <div class="content flex" style="height: 6rem"></div>
+  </header>
+  <main>
+    <section class="flex bg-light border-top no-rounded border-light-darken">
+      <article class="container text-center py-5">
+        <img src="./dist/svg/quartzo.svg" width="230" alt="">
+        <h1 class="mb-3">Quartzo</h1>
+        <p class="">Simple and powefull CSS framework</p>
+        <p class="text-muted"><i><u>Currently v1.3.0</u></i></p>
+
+        <a href="#get-started" class="button button-primary mt-5">Getting Started</a>
+      </article>
+    </section>
+
+    <section class="container py-5">
+      <article>
+        <h2 id="get-started" class="mb-3">Getting Started</h2>
+
+        <h3 class="my-3">What's Quartzo?</h3>
+
+        <p class="text-justify">Quartzo is a CSS framework created to be simple and easy to use. Its components, for the most part, do not use javascript, allowing you to build complete layouts only with HTML and CSS.</p>
+
+        <h3 class="my-3">How to import?</h3>
+
+        <p class="text-justify">Download Quartzo framework and copy CSS and JS files to your project folder.</p>
+
+        <pre class="p-2 my-3">$ cd <i>project_path</i><br>$ wget <a href="https://github.com/brumazzi/quartzo/archive/refs/tags/v1.1.0.zip">https://github.com/brumazzi/quartzo/archive/refs/tags/v1.1.0.zip</a><br>$ unzip quartzo-1.1.0.zip<br>$ cp quartzo-1.1.0/dist/css/quartzo.css <i>css_folder_path</i><br>$ cp quartzo-1.1.0/dist/css/quartzo.js <i>js_folder_path</i></pre>
+
+      </article>
+
+      <hr class="my-5">
+
+      <!-- Quartzo samples -->
+
+      <article>
+        <h3 id="alert">Alert</h3>
+
+        <p class="mt-3 text-justify">Display feedback or contextual messages for standard user actions.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;my-1 alert&quot;</span><span class="text-danger">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore velit enim, reprehenderit quo tempora porro odit placeat soluta necessitatibus corrupti fugit excepturi? Aut animi consectetur hic dolorum quis! Nostrum, mollitia.<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;my-1 alert alert-primary&quot;</span><span class="text-danger">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias nisi architecto laboriosam nulla debitis possimus, veritatis in quisquam voluptatibus deleniti! Sapiente esse deleniti perspiciatis deserunt culpa repellendus praesentium dolor.<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;my-1 alert alert-success&quot;</span><span class="text-danger">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias nisi architecto laboriosam nulla debitis possimus, veritatis in quisquam voluptatibus deleniti! Sapiente esse deleniti perspiciatis deserunt culpa repellendus praesentium dolor.<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;my-1 alert alert-warning&quot;</span><span class="text-danger">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias nisi architecto laboriosam nulla debitis possimus, veritatis in quisquam voluptatibus deleniti! Sapiente esse deleniti perspiciatis deserunt culpa repellendus praesentium dolor.<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;my-1 alert alert-danger&quot;</span><span class="text-danger">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit minus impedit nemo deleniti dolores quia, consequatur facilis quae corrupti perferendis cum nostrum sed reiciendis, tempora tenetur similique eos ea? Omnis?<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;my-1 alert alert-info&quot;</span><span class="text-danger">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias nisi architecto laboriosam nulla debitis possimus, veritatis in quisquam voluptatibus deleniti! Sapiente esse deleniti perspiciatis deserunt culpa repellendus praesentium dolor.<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;my-1 alert alert-secondary&quot;</span><span class="text-danger">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias nisi architecto laboriosam nulla debitis possimus, veritatis in quisquam voluptatibus deleniti! Sapiente esse deleniti perspiciatis deserunt culpa repellendus praesentium dolor.<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="my-1 alert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore velit enim, reprehenderit quo tempora porro odit placeat soluta necessitatibus corrupti fugit excepturi? Aut animi consectetur hic dolorum quis! Nostrum, mollitia.</div>
+        <div class="my-1 alert alert-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias nisi architecto laboriosam nulla debitis possimus, veritatis in quisquam voluptatibus deleniti! Sapiente esse deleniti perspiciatis deserunt culpa repellendus praesentium dolor.</div>
+        <div class="my-1 alert alert-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias nisi architecto laboriosam nulla debitis possimus, veritatis in quisquam voluptatibus deleniti! Sapiente esse deleniti perspiciatis deserunt culpa repellendus praesentium dolor.</div>
+        <div class="my-1 alert alert-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias nisi architecto laboriosam nulla debitis possimus, veritatis in quisquam voluptatibus deleniti! Sapiente esse deleniti perspiciatis deserunt culpa repellendus praesentium dolor.</div>
+        <div class="my-1 alert alert-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit minus impedit nemo deleniti dolores quia, consequatur facilis quae corrupti perferendis cum nostrum sed reiciendis, tempora tenetur similique eos ea? Omnis?</div>
+        <div class="my-1 alert alert-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias nisi architecto laboriosam nulla debitis possimus, veritatis in quisquam voluptatibus deleniti! Sapiente esse deleniti perspiciatis deserunt culpa repellendus praesentium dolor.</div>
+        <div class="my-1 alert alert-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias nisi architecto laboriosam nulla debitis possimus, veritatis in quisquam voluptatibus deleniti! Sapiente esse deleniti perspiciatis deserunt culpa repellendus praesentium dolor.</div>
+      </article>
+
+      <hr>
+
+      <article class="">
+        <h3 id="badge">Badge</h3>
+
+        <p class="mt-3 text-justify">Use Badges to flag or set tags.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;badge badge-primary&quot;</span><span class="text-danger">&gt;</span>Primary<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;badge badge-success&quot;</span><span class="text-danger">&gt;</span>Success<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;badge badge-danger&quot;</span><span class="text-danger">&gt;</span>Danger<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;badge badge-warning&quot;</span><span class="text-danger">&gt;</span>Warning<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;badge badge-info&quot;</span><span class="text-danger">&gt;</span>Info<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;badge&quot;</span><span class="text-danger">&gt;</span>Normal<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span></pre>
+
+        <span class="badge badge-primary">Primary</span>
+        <span class="badge badge-success">Success</span>
+        <span class="badge badge-danger">Danger</span>
+        <span class="badge badge-warning">Warning</span>
+        <span class="badge badge-info">Info</span>
+        <span class="badge">Normal</span>
+      </article>
+
+      <hr>
+
+      <article class="">
+        <h3 id="border">Border</h3>
+
+        <p class="mt-3 text-justify">Define borders to components.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block border&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block border-top&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block border-right&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block border-bottom&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block border-left&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block border border-primary&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block border border-success&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block border border-danger&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block border border-warning&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block border border-info&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br></pre>
+
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block border"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block border-top"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block border-right"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block border-bottom"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block border-left"></span>
+        <br>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block border border-primary"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block border border-success"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block border border-danger"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block border border-warning"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block border border-info"></span>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="button">Button</h3>
+
+        <p class="mt-3 text-justify">Define custom action buttons.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button&quot;</span><span class="text-danger">&gt;</span>Normal<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button button-primary&quot;</span><span class="text-danger">&gt;</span>Primary<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button button-success&quot;</span><span class="text-danger">&gt;</span>Success<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button button-danger&quot;</span><span class="text-danger">&gt;</span>Danger<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button button-warning&quot;</span><span class="text-danger">&gt;</span>Warning<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button button-info&quot;</span><span class="text-danger">&gt;</span>Info<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button&quot;</span> disabled<span class="text-danger">&gt;</span>Disabled<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;&quot;</span> class=<span class="text-success">&quot;button button-outline button-danger&quot;</span><span class="text-danger">&gt;</span>Outline<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span></pre>
+
+        <button class="button">Normal</button>
+        <button class="button button-primary">Primary</button>
+        <button class="button button-success">Success</button>
+        <button class="button button-danger">Danger</button>
+        <button class="button button-warning">Warning</button>
+        <button class="button button-info">Info</button>
+        <button class="button" disabled>Disabled</button>
+        <a href="" class="button button-outline button-danger">Outline</a>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="card">Card</h3>
+
+        <p class="mt-3 text-justify">Create information block or a profile card.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;card border border-muted&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;card-header&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>h3<span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/h3<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;card-body text-justify&quot;</span><span class="text-danger">&gt;</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum, distinctio, neque esse, accusantium tempore est quam aliquid deleniti ipsum doloremque voluptatibus inventore suscipit sunt ad mollitia quibusdam odit accusamus.<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;card-footer text-right&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="card border border-muted">
+          <div class="card-header">
+            <h3>Lorem</h3>
+          </div>
+          <div class="card-body text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum, distinctio, neque esse, accusantium tempore est quam aliquid deleniti ipsum doloremque voluptatibus inventore suscipit sunt ad mollitia quibusdam odit accusamus.</div>
+          <div class="card-footer text-right">Lorem</div>
+        </div>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="color">Color</h3>
+
+        <p class="mt-3 text-justify">Change background or foreground with different shades of predefined colors.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-primary&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-success&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-danger&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-warning&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-info&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-secondary&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-light&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-dark&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-muted&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-tertiary&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-quaternary&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-quinary&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-primary-lighten&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-success-lighten&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-danger-lighten&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-warning-lighten&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-info-lighten&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-primary-darken&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-success-darken&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-danger-darken&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-warning-darken&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-info-darken&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-dark-lighten&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px;height:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block bg-light-darken&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-primary&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-success&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-danger&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-warning&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-info&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-secondary&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-light&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-dark&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-muted&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-tertiary&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-quaternary&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-quinary&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-primary-lighten&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-success-lighten&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-danger-lighten&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-warning-lighten&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-info-lighten&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-primary-darken&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-success-darken&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-danger-darken&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-warning-darken&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-info-darken&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-dark-lighten&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:80px&quot;</span> class=<span class="text-success">&quot;mx-2 d-inline-block text-light-darken&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span></pre>
+
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-primary"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-success"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-danger"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-warning"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-info"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-secondary"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-light"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-dark"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-muted"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-tertiary"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-quaternary"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-quinary"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-primary-lighten"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-success-lighten"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-danger-lighten"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-warning-lighten"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-info-lighten"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-primary-darken"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-success-darken"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-danger-darken"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-warning-darken"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-info-darken"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-dark-lighten"></span>
+        <span style="width:80px;height:80px" class="mx-2 d-inline-block bg-light-darken"></span>
+
+        <span style="width:80px" class="mx-2 d-inline-block text-primary">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-success">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-danger">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-warning">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-info">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-secondary">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-light">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-dark">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-muted">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-tertiary">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-quaternary">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-quinary">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-primary-lighten">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-success-lighten">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-danger-lighten">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-warning-lighten">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-info-lighten">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-primary-darken">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-success-darken">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-danger-darken">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-warning-darken">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-info-darken">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-dark-lighten">Lorem</span>
+        <span style="width:80px" class="mx-2 d-inline-block text-light-darken">Lorem</span>
+
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="display">Display</h3>
+
+        <p class="mt-3 text-justify">Change the display of your tags.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:120px;height:60px&quot;</span> class=<span class="text-success">&quot;my-2 d-none mx-2 bg-primary&quot;</span><span class="text-danger">&gt;</span>None<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:120px;height:60px&quot;</span> class=<span class="text-success">&quot;my-2 d-inline mx-2 bg-primary&quot;</span><span class="text-danger">&gt;</span>Inline<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:120px;height:60px&quot;</span> class=<span class="text-success">&quot;my-2 d-inline-block mx-2 bg-primary&quot;</span><span class="text-danger">&gt;</span>Inline-Block<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:120px;height:60px&quot;</span> class=<span class="text-success">&quot;my-2 d-block mx-2 bg-primary&quot;</span><span class="text-danger">&gt;</span>Block<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:120px;height:60px&quot;</span> class=<span class="text-success">&quot;my-2 d-table mx-2 bg-primary&quot;</span><span class="text-danger">&gt;</span>Table<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span style=<span class="text-success">&quot;width:120px;height:60px&quot;</span> class=<span class="text-success">&quot;my-2 d-flex mx-2 bg-primary&quot;</span><span class="text-danger">&gt;</span>Flex<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span></pre>
+
+        <span style="width:120px;height:60px" class="my-2 d-none mx-2 bg-primary">None</span>
+        <span style="width:120px;height:60px" class="my-2 d-inline mx-2 bg-primary">Inline</span>
+        <span style="width:120px;height:60px" class="my-2 d-inline-block mx-2 bg-primary">Inline-Block</span>
+        <span style="width:120px;height:60px" class="my-2 d-block mx-2 bg-primary">Block</span>
+        <span style="width:120px;height:60px" class="my-2 d-table mx-2 bg-primary">Table</span>
+        <span style="width:120px;height:60px" class="my-2 d-flex mx-2 bg-primary">Flex</span>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="dropdown">Dropdown</h3>
+
+        <p class="mt-3 text-justify">Create collapsed cards, list or menus.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>details class=<span class="text-success">&quot;dropdown w-20&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>summary<span class="text-danger">&gt;</span>Dropdown<span class="text-danger">&lt;</span>/summary<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;content&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>p<span class="text-danger">&gt;</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptatem, minus veritatis similique, dolore magnam possimus illum repudiandae tempore quibusdam aliquam nostrum voluptates. Possimus ut ducimus explicabo unde totam vitae!<span class="text-danger">&lt;</span>/p<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/details<span class="text-danger">&gt;</span></pre>
+
+        <details class="dropdown w-20">
+          <summary>Dropdown</summary>
+          <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptatem, minus veritatis similique, dolore magnam possimus illum repudiandae tempore quibusdam aliquam nostrum voluptates. Possimus ut ducimus explicabo unde totam vitae!</p>
+          </div>
+        </details>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>details class=<span class="text-success">&quot;dropdown w-20 no-border&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>summary class=<span class="text-success">&quot;button&quot;</span><span class="text-danger">&gt;</span>Dropdown<span class="text-danger">&lt;</span>/summary<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;content&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>p<span class="text-danger">&gt;</span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptatem, minus veritatis similique, dolore magnam possimus illum repudiandae tempore quibusdam aliquam nostrum voluptates. Possimus ut ducimus explicabo unde totam vitae!<span class="text-danger">&lt;</span>/p<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/details<span class="text-danger">&gt;</span></pre>
+
+        <details class="dropdown w-20 no-border">
+          <summary class="button button-outline button-danger">Dropdown</summary>
+          <div class="content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus voluptatem, minus veritatis similique, dolore magnam possimus illum repudiandae tempore quibusdam aliquam nostrum voluptates. Possimus ut ducimus explicabo unde totam vitae!</p>
+          </div>
+        </details>
+
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="grid">Grid</h3>
+
+        <p class="mt-3 text-justify">Organize the layout of forms or other components.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-primary column-1&quot;</span><span class="text-danger">&gt;</span>column-1<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-muted column-2&quot;</span><span class="text-danger">&gt;</span>column-2<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-primary column-3&quot;</span><span class="text-danger">&gt;</span>column-3<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-muted column-4&quot;</span><span class="text-danger">&gt;</span>column-4<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-primary column-5&quot;</span><span class="text-danger">&gt;</span>column-5<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-muted column-6&quot;</span><span class="text-danger">&gt;</span>column-6<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-primary column-7&quot;</span><span class="text-danger">&gt;</span>column-7<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-muted column-8&quot;</span><span class="text-danger">&gt;</span>column-8<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-primary column-9&quot;</span><span class="text-danger">&gt;</span>column-9<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-muted column-10&quot;</span><span class="text-danger">&gt;</span>column-10<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-primary column-11&quot;</span><span class="text-danger">&gt;</span>column-11<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-muted column-12&quot;</span><span class="text-danger">&gt;</span>column-12<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row bg-light-darken border-dark border">
+          <div class="p-1 bg-primary column-12">column-12</div>
+          <div class="p-1 bg-primary column-1">column-1</div>
+          <div class="p-1 bg-muted column-11">column-11</div>
+          <div class="p-1 bg-primary column-2">column-2</div>
+          <div class="p-1 bg-muted column-10">column-10</div>
+          <div class="p-1 bg-primary column-3">column-3</div>
+          <div class="p-1 bg-muted column-9">column-9</div>
+          <div class="p-1 bg-primary column-4">column-4</div>
+          <div class="p-1 bg-muted column-8">column-8</div>
+          <div class="p-1 bg-primary column-5">column-5</div>
+          <div class="p-1 bg-muted column-7">column-7</div>
+          <div class="p-1 bg-muted column-6">column-6</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex flex-column&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-muted column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex flex-column bg-light-darken border-dark border">
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-muted column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex flex-column-reverse&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem 1<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-muted column&quot;</span><span class="text-danger">&gt;</span>Lorem 2<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem 3<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex flex-column-reverse bg-light-darken border-dark border">
+          <div class="p-1 bg-primary column">Lorem 1</div>
+          <div class="p-1 bg-muted column">Lorem 2</div>
+          <div class="p-1 bg-primary column">Lorem 3</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex justify-contents-center&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-muted column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex justify-contents-center bg-light-darken border-dark border">
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-muted column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex justify-contents-between&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex justify-contents-between bg-light-darken border-dark border">
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex justify-contents-evenly&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex justify-contents-evenly bg-light-darken border-dark border">
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex justify-contents-around&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex justify-contents-around bg-light-darken border-dark border">
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex justify-contents-end&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-muted column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex justify-contents-end bg-light-darken border-dark border">
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-muted column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex align-items-center&quot;</span> style=<span class="text-success">&quot;height: 200px;&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-muted column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex align-items-center bg-light-darken border-dark border" style="height: 200px;">
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-muted column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex align-items-end&quot;</span> style=<span class="text-success">&quot;height: 200px;&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-muted column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex align-items-end bg-light-darken border-dark border" style="height: 200px;">
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-muted column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex align-items-start&quot;</span> style=<span class="text-success">&quot;height: 200px;&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-muted column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex align-items-start bg-light-darken border-dark border" style="height: 200px;">
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-muted column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex align-items-stretch&quot;</span> style=<span class="text-success">&quot;height: 200px;&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-muted column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;p-1 bg-primary column&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex align-items-stretch bg-light-darken border-dark border" style="height: 200px;">
+          <div class="p-1 bg-primary column">Lorem</div>
+          <div class="p-1 bg-muted column">Lorem</div>
+          <div class="p-1 bg-primary column">Lorem</div>
+        </div>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="input">Input</h3>
+
+        <p class="mt-3 text-justify">Use custom inputs visually.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;column-3 p-1&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>input type=<span class="text-success">&quot;text&quot;</span> class=<span class="text-success">&quot;input&quot;</span> name=<span class="text-success">&quot;&quot;</span> id=<span class="text-success">&quot;&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;column-3 p-1&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>input type=<span class="text-success">&quot;number&quot;</span> class=<span class="text-success">&quot;input&quot;</span> name=<span class="text-success">&quot;&quot;</span> id=<span class="text-success">&quot;&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;column-3 p-1&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>input type=<span class="text-success">&quot;date&quot;</span> class=<span class="text-success">&quot;input&quot;</span> name=<span class="text-success">&quot;&quot;</span> id=<span class="text-success">&quot;&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;column-3 p-1&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>select class=<span class="text-success">&quot;input&quot;</span> name=<span class="text-success">&quot;&quot;</span> id=<span class="text-success">&quot;&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>option value=<span class="text-success">&quot;&quot;</span><span class="text-danger">&gt;</span>Option 1<span class="text-danger">&lt;</span>/option<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>option value=<span class="text-success">&quot;&quot;</span><span class="text-danger">&gt;</span>Option 2<span class="text-danger">&lt;</span>/option<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>option value=<span class="text-success">&quot;&quot;</span><span class="text-danger">&gt;</span>Option 3<span class="text-danger">&lt;</span>/option<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>option value=<span class="text-success">&quot;&quot;</span><span class="text-danger">&gt;</span>Option 4<span class="text-danger">&lt;</span>/option<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>option value=<span class="text-success">&quot;&quot;</span><span class="text-danger">&gt;</span>Option 5<span class="text-danger">&lt;</span>/option<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>/select<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row">
+          <div class="column-3 p-1"><input class="input" type="text" name="" id=""></div>
+          <div class="column-3 p-1"><input class="input" type="number" name="" id=""></div>
+          <div class="column-3 p-1"><input class="input" type="date" name="" id=""></div>
+          <div class="column-3 p-1">
+            <select name="" id="" class="input">
+              <option value="">Option 1</option>
+              <option value="">Option 2</option>
+              <option value="">Option 3</option>
+              <option value="">Option 4</option>
+              <option value="">Option 5</option>
+            </select>
+          </div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;row flex flex-column&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;column-6 p-1&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>input type=<span class="text-success">&quot;checkbox&quot;</span> name=<span class="text-success">&quot;&quot;</span> id=<span class="text-success">&quot;&quot;</span> class=<span class="text-success">&quot;input&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;column-6 p-1&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>input type=<span class="text-success">&quot;checkbox&quot;</span> name=<span class="text-success">&quot;&quot;</span> id=<span class="text-success">&quot;&quot;</span> class=<span class="text-success">&quot;switch input&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;column-6 p-1&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>input type=<span class="text-success">&quot;radio&quot;</span> name=<span class="text-success">&quot;radio&quot;</span> id=<span class="text-success">&quot;&quot;</span> class=<span class="text-success">&quot;input&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;column-6 p-1&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>input type=<span class="text-success">&quot;radio&quot;</span> name=<span class="text-success">&quot;radio&quot;</span> id=<span class="text-success">&quot;&quot;</span> class=<span class="text-success">&quot;switch input&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex wrap">
+          <div class="column-6 p-1">
+            <input type="checkbox" name="" id="check-1" class="input">
+            <label for="check-1" class="d-inline">Checkbox</label>
+          </div>
+          <div class="column-6 p-1">
+            <input type="checkbox" name="" id="check-2" class="switch input">
+            <label for="check-2" class="d-inline">Checkbox</label>
+          </div>
+          <div class="column-6 p-1">
+            <input type="radio" name="radio" id="radio-1" class="input">
+            <label for="radio-1" class="d-inline">Radio</label>
+          </div>
+          <div class="column-6 p-1">
+            <input type="radio" name="radio" id="radio-2" class="switch input">
+            <label for="radio-2" class="d-inline">Radio</label>
+          </div>
+        </div>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="modal">Modal</h3>
+
+        <p class="mt-3 text-justify">Display a message or notification to the user.</p>
+
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>section<span class="text-danger">&gt;</span><br>&nbsp;<span class="text-danger">&lt;</span>dialog id=<span class="text-success">&quot;modalDialog&quot;</span> layout-width=<span class="text-success">&quot;sm&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>h3<span class="text-danger">&gt;</span>Modal Dialog<span class="text-danger">&lt;</span>/h3<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>p class=<span class="text-success">&quot;my-2&quot;</span><span class="text-danger">&gt;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit culpa temporibus ducimus, ratione, quidem aperiam obcaecati mollitia accusamus nulla consequatur beatae sit veniam aspernatur tenetur ad fugiat ipsa et inventore.<span class="text-danger">&lt;</span>/p<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>form class=<span class="text-success">&quot;footer&quot;</span> action=<span class="text-success">&quot;&quot;</span> method=<span class="text-success">&quot;dialog&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>button value=<span class="text-success">&quot;0&quot;</span> class=<span class="text-success">&quot;button button-danger&quot;</span><span class="text-danger">&gt;</span>Close<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>/form<span class="text-danger">&gt;</span><br>&nbsp;<span class="text-danger">&lt;</span>/dialog<span class="text-danger">&gt;</span><br><br>&nbsp;<span class="text-danger">&lt;</span>button onclick=<span class="text-success">&quot;modalDialog.showModal()&quot;</span> class=<span class="text-success">&quot;button&quot;</span><span class="text-danger">&gt;</span>Show Modal<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/section<span class="text-danger">&gt;</span></pre>
+
+        <section>
+          <dialog id="modalDialog" layout-width="sm">
+            <h3>Modal Dialog</h3>
+            <p class="my-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit culpa temporibus ducimus, ratione, quidem aperiam obcaecati mollitia accusamus nulla consequatur beatae sit veniam aspernatur tenetur ad fugiat ipsa et inventore.</p>
+            <form class="footer" action="" method="dialog">
+              <button value="0" class="button button-danger">Close</button>
+            </form>
+          </dialog>
+
+          <button onclick="modalDialog.showModal()" class="button">Show Modal</button>
+        </section>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="navbar">Navbar</h3>
+
+        <p class="mt-3 text-justify">Open a side navigation menu.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>details class=<span class="text-success">&quot;navbar-content&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;<span class="text-danger">&lt;</span>summary class=<span class="text-success">&quot;button button-outline&quot;</span><span class="text-danger">&gt;</span>Show Navbar<span class="text-danger">&lt;</span>/summary<span class="text-danger">&gt;</span><br>&nbsp;<span class="text-danger">&lt;</span>nav class=<span class="text-success">&quot;navbar&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;navbar-header&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>ul class=<span class="text-success">&quot;navbar-items&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>li class=<span class="text-success">&quot;navbar-item&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;javascript:void(0)&quot;</span><span class="text-danger">&gt;</span>Lorem 1<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>li class=<span class="text-success">&quot;navbar-item&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;javascript:void(0)&quot;</span><span class="text-danger">&gt;</span>Lorem 2<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>li class=<span class="text-success">&quot;navbar-item&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;javascript:void(0)&quot;</span><span class="text-danger">&gt;</span>Lorem 3<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>li class=<span class="text-success">&quot;navbar-item&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;javascript:void(0)&quot;</span><span class="text-danger">&gt;</span>Lorem 4<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;&nbsp;<span class="text-danger">&lt;</span>li class=<span class="text-success">&quot;navbar-item&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;javascript:void(0)&quot;</span><span class="text-danger">&gt;</span>Lorem 5<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>/ul<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;navbar-footer&quot;</span><span class="text-danger">&gt;</span>Lorem<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br>&nbsp;<span class="text-danger">&lt;</span>/nav<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/details<span class="text-danger">&gt;</span></pre>
+
+        <details class="navbar-content">
+          <summary class="button button-outline">Show Navbar</summary>
+          <nav class="navbar">
+            <div class="navbar-header">Lorem</div>
+            <ul class="navbar-items">
+              <li class="navbar-item"><a href="javascript:void(0)">Lorem 1</a></li>
+              <li class="navbar-item"><a href="javascript:void(0)">Lorem 2</a></li>
+              <li class="navbar-item"><a href="javascript:void(0)">Lorem 3</a></li>
+              <li class="navbar-item"><a href="javascript:void(0)">Lorem 4</a></li>
+              <li class="navbar-item"><a href="javascript:void(0)">Lorem 5</a></li>
+            </ul>
+            <div class="navbar-footer">Lorem</div>
+          </nav>
+        </details>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="pagination">Pagination</h3>
+
+        <p class="mt-3 text-justify">Create pagination for tables and lists.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>ul class=<span class="text-success">&quot;pagination&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>li class=<span class="text-success">&quot;active&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;#&quot;</span><span class="text-danger">&gt;</span>1<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>li class=<span class="text-success">&quot;disabled&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;#&quot;</span><span class="text-danger">&gt;</span>2<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>li<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;#&quot;</span><span class="text-danger">&gt;</span>3<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>li<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;#&quot;</span><span class="text-danger">&gt;</span>4<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/ul<span class="text-danger">&gt;</span></pre>
+
+        <ul class="pagination">
+          <li class="active"><span>1</span></li>
+          <li class="disabled"><span>2</span></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+        </ul>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>ul class=<span class="text-success">&quot;pagination pagination-primary&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>li<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;#&quot;</span><span class="text-danger">&gt;</span>1<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>li<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;#&quot;</span><span class="text-danger">&gt;</span>2<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>li<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;#&quot;</span><span class="text-danger">&gt;</span>3<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/ul<span class="text-danger">&gt;</span><br><br><span class="text-danger">&lt;</span>ul class=<span class="text-success">&quot;pagination pagination-danger&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>li<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;#&quot;</span><span class="text-danger">&gt;</span>1<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>li<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;#&quot;</span><span class="text-danger">&gt;</span>2<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br>&nbsp;&nbsp;<span class="text-danger">&lt;</span>li<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>a href=<span class="text-success">&quot;#&quot;</span><span class="text-danger">&gt;</span>3<span class="text-danger">&lt;</span>/a<span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/li<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>/ul<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex">
+          <div class="column">
+            <ul class="pagination pagination-primary mx-1">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+          </div>
+          <div class="column">
+            <ul class="pagination pagination-danger mx-1">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="progress">Progress</h3>
+
+        <p class="mt-3 text-justify">Optimize page and file loads.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>progress layout-size=<span class="text-success">&quot;sm&quot;</span> value=<span class="text-success">&quot;30&quot;</span> max=<span class="text-success">&quot;100&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/progress<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>progress value=<span class="text-success">&quot;30&quot;</span> max=<span class="text-success">&quot;100&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/progress<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>progress layout-size=<span class="text-success">&quot;lg&quot;</span> value=<span class="text-success">&quot;30&quot;</span> max=<span class="text-success">&quot;100&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/progress<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>progress class=<span class="text-success">&quot;progress-primary&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/progress<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>progress class=<span class="text-success">&quot;progress-success&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/progress<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>progress class=<span class="text-success">&quot;progress-danger&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/progress<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>progress class=<span class="text-success">&quot;progress-warning&quot;</span> animation=<span class="text-success">&quot;center-open&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/progress<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>progress class=<span class="text-success">&quot;progress-info&quot;</span> animation=<span class="text-success">&quot;left-right&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/progress<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>progress class=<span class="text-success">&quot;progress-secondary&quot;</span><span class="text-danger">&gt;</span><span class="text-danger">&lt;</span>/progress<span class="text-danger">&gt;</span></pre>
+
+        <progress layout-size="sm" value="30" max="100"></progress>
+        <progress value="50" max="100"></progress>
+        <progress layout-size="lg" value="30" max="100"></progress>
+        <br>
+        <progress class="progress-primary"></progress>
+        <progress class="progress-success"></progress>
+        <progress class="progress-danger"></progress>
+        <br>
+        <progress class="progress-warning" animation="center-open"></progress>
+        <progress class="progress-info" animation="left-right"></progress>
+        <progress class="progress-secondary"></progress>
+
+        <p class="mt-3 text-justify"><small><i class="text-warning-darken">Animation compatible with firefox.</i></small></p>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="space-margin-size">Space, Margin and Size</h3>
+
+        <p class="mt-3 text-justify">Add or remove spacing and set dimensions for your components.</p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;p-0 bg-primary&quot;</span><span class="text-danger">&gt;</span>padding p-0<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;p-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>padding p-1<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;p-2 bg-primary&quot;</span><span class="text-danger">&gt;</span>padding p-2<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;p-3 bg-primary&quot;</span><span class="text-danger">&gt;</span>padding p-3<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;p-4 bg-primary&quot;</span><span class="text-danger">&gt;</span>padding p-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;p-5 bg-primary&quot;</span><span class="text-danger">&gt;</span>padding p-5<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex bg-light-darken justify-contents-around align-items-center p-1">
+          <span class="p-0 bg-primary">padding p-0</span>
+          <span class="p-1 bg-primary">padding p-1</span>
+          <span class="p-2 bg-primary">padding p-2</span>
+          <span class="p-3 bg-primary">padding p-3</span>
+          <span class="p-4 bg-primary">padding p-4</span>
+          <span class="p-5 bg-primary">padding p-5</span>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;pt-4 bg-primary&quot;</span><span class="text-danger">&gt;</span>padding p-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;pb-4 bg-primary&quot;</span><span class="text-danger">&gt;</span>padding p-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;pl-4 bg-primary&quot;</span><span class="text-danger">&gt;</span>padding p-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;pr-4 bg-primary&quot;</span><span class="text-danger">&gt;</span>padding p-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex bg-light-darken justify-contents-around align-items-center">
+          <span class="pt-4 bg-primary">padding p-4</span>
+          <span class="pb-4 bg-primary">padding p-4</span>
+          <span class="pl-4 bg-primary">padding p-4</span>
+          <span class="pr-4 bg-primary">padding p-4</span>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;bg-primary ml-4&quot;</span><span class="text-danger">&gt;</span>margin m-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;bg-primary mt-4&quot;</span><span class="text-danger">&gt;</span>margin m-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;bg-primary mb-4&quot;</span><span class="text-danger">&gt;</span>margin m-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;bg-primary mr-4&quot;</span><span class="text-danger">&gt;</span>margin m-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex bg-light-darken justify-contents-between align-items-center">
+          <span class="bg-primary ml-4">margin m-4</span>
+          <span class="bg-primary mt-4">margin m-4</span>
+          <span class="bg-primary mb-4">margin m-4</span>
+          <span class="bg-primary mr-4">margin m-4</span>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;bg-primary ml-lg-4&quot;</span><span class="text-danger">&gt;</span>margin ml-lg-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;bg-primary mt-lg-4&quot;</span><span class="text-danger">&gt;</span>margin mt-lg-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;bg-primary mb-lg-4&quot;</span><span class="text-danger">&gt;</span>margin mb-lg-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>span class=<span class="text-success">&quot;bg-primary mr-lg-4&quot;</span><span class="text-danger">&gt;</span>margin mr-lg-4<span class="text-danger">&lt;</span>/span<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex bg-light-darken justify-contents-between align-items-center">
+          <span class="bg-primary ml-lg-4">margin ml-lg-4</span>
+          <span class="bg-primary mt-lg-4">margin mt-lg-4</span>
+          <span class="bg-primary mb-lg-4">margin mb-lg-4</span>
+          <span class="bg-primary mr-lg-4">margin mr-lg-4</span>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-10 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>10%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-20 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>20%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-30 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>30%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-40 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>40%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-50 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>50%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-60 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>60%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-70 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>70%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-80 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>80%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-90 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>90%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-100 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>100%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-25 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>25%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;w-75 mx-1 my-1 bg-primary&quot;</span><span class="text-danger">&gt;</span>75%<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex wrap bg-light-darken">
+          <div class="text-center w-10 mx-1 my-1 bg-primary">10%</div>
+          <div class="text-center w-20 mx-1 my-1 bg-primary">20%</div>
+          <div class="text-center w-30 mx-1 my-1 bg-primary">30%</div>
+          <div class="text-center w-40 mx-1 my-1 bg-primary">40%</div>
+          <div class="text-center w-50 mx-1 my-1 bg-primary">50%</div>
+          <div class="text-center w-60 mx-1 my-1 bg-primary">60%</div>
+          <div class="text-center w-70 mx-1 my-1 bg-primary">70%</div>
+          <div class="text-center w-80 mx-1 my-1 bg-primary">80%</div>
+          <div class="text-center w-90 mx-1 my-1 bg-primary">90%</div>
+          <div class="text-center w-100 mx-1 my-1 bg-primary">100%</div>
+          <div class="text-center w-25 mx-1 my-1 bg-primary">25%</div>
+          <div class="text-center w-75 mx-1 my-1 bg-primary">75%</div>
+        </div>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;text-center bg-primary d-block no-rounded&quot;</span> style=<span class="text-success">&quot;width:120px;height:120px;line-height: 120px;&quot;</span><span class="text-danger">&gt;</span>no-rounded<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;text-center bg-primary d-block rounded&quot;</span> style=<span class="text-success">&quot;width:120px;height:120px;line-height: 120px;&quot;</span><span class="text-danger">&gt;</span>rounded<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>div class=<span class="text-success">&quot;text-center bg-primary d-block rounded-2&quot;</span> style=<span class="text-success">&quot;width:120px;height:120px;line-height: 120px;&quot;</span><span class="text-danger">&gt;</span>rounded-2<span class="text-danger">&lt;</span>/div<span class="text-danger">&gt;</span></pre>
+
+        <div class="row flex justify-contents-around">
+          <div class="text-center bg-primary d-block no-rounded" style="width:120px;height:120px;line-height: 120px;">no-rounded</div>
+          <div class="text-center bg-primary d-block rounded" style="width:120px;height:120px;line-height: 120px;">rounded</div>
+          <div class="text-center bg-primary d-block rounded-2" style="width:120px;height:120px;line-height: 120px;">rounded-2</div>
+        </div>
+
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="tooltip">Tooltip</h3>
+
+        <p class="mt-3 text-justify"></p>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button&quot;</span> tooltip-text=<span class="text-success">&quot;Hi! I top tooltip&quot;</span> layout-tooltip=<span class="text-success">&quot;top&quot;</span><span class="text-danger">&gt;</span>Tooltip top<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button&quot;</span> tooltip-text=<span class="text-success">&quot;Hi! I bottom tooltip&quot;</span> layout-tooltip=<span class="text-success">&quot;bottom&quot;</span><span class="text-danger">&gt;</span>Tooltip bottom<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button&quot;</span> tooltip-text=<span class="text-success">&quot;Hi! I left tooltip&quot;</span> layout-tooltip=<span class="text-success">&quot;left&quot;</span><span class="text-danger">&gt;</span>Tooltip left<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span><br><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button&quot;</span> tooltip-text=<span class="text-success">&quot;Hi! I right tooltip&quot;</span> layout-tooltip=<span class="text-success">&quot;right&quot;</span><span class="text-danger">&gt;</span>Tooltip right<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span></pre>
+
+        <button class="button" tooltip-text="Hi! I top tooltip" layout-tooltip="top">Tooltip top</button>
+        <button class="button" tooltip-text="Hi! I bottom tooltip" layout-tooltip="bottom">Tooltip bottom</button>
+        <button class="button" tooltip-text="Hi! I left tooltip" layout-tooltip="left">Tooltip left</button>
+        <button class="button" tooltip-text="Hi! I right tooltip" layout-tooltip="right">Tooltip right</button>
+      </article>
+
+      <hr>
+
+      <article>
+        <h3 id="global-effects">Global Effects</h3>
+
+        <p class="mt-3 text-justify">Define presets for all components of your project.</p>
+
+        <!-- <pre class="p-2 my-3"><span class="text-danger">&lt;</span>body layout-menu=<span class="text-success">&quot;false&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;...<br><span class="text-danger">&lt;</span>/body<span class="text-danger">&gt;</span><br><br><span class="text-danger">&lt;</span>body layout-menu=<span class="text-success">&quot;true&quot;</span> layout-menu-direction=<span class="text-success">&quot;left&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;...<br><span class="text-danger">&lt;</span>/body<span class="text-danger">&gt;</span><br><br><span class="text-danger">&lt;</span>body layout-menu=<span class="text-success">&quot;true&quot;</span> layout-menu-direction=<span class="text-success">&quot;right&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;...<br><span class="text-danger">&lt;</span>/body<span class="text-danger">&gt;</span></pre>
+
+        <button class="button" onclick="document.body.setAttribute('layout-menu', 'false')">Disable side menu</button>
+        <button class="button" onclick="document.body.setAttribute('layout-menu', 'true'); document.body.setAttribute('layout-menu-direction', 'left')">Add side menu to left</button>
+        <button class="button" onclick="document.body.setAttribute('layout-menu', 'true'); document.body.setAttribute('layout-menu-direction', 'right')">Add side menu to right</button> -->
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>body layout-rounded=<span class="text-success">&quot;lg&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;...<br><span class="text-danger">&lt;</span>/body<span class="text-danger">&gt;</span><br><br><span class="text-danger">&lt;</span>body layout-rounded=<span class="text-success">&quot;sm&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;...<br><span class="text-danger">&lt;</span>/body<span class="text-danger">&gt;</span><br></pre>
+
+        <button class="button" onclick="document.body.setAttribute('layout-rounded', '')">Disable border rounded</button>
+        <button class="button" onclick="document.body.setAttribute('layout-rounded', 'sm')">Set border rounded small</button>
+        <button class="button" onclick="document.body.setAttribute('layout-rounded', 'lg')">Set border rounded larger</button>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>body layout-transition=<span class="text-success">&quot;false&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;...<br><span class="text-danger">&lt;</span>/body<span class="text-danger">&gt;</span><br><br><span class="text-danger">&lt;</span>body layout-transition=<span class="text-success">&quot;true&quot;</span><span class="text-danger">&gt;</span><br>&nbsp;&nbsp;...<br><span class="text-danger">&lt;</span>/body<span class="text-danger">&gt;</span><br></pre>
+
+        <pre class="p-2 my-3"><span class="text-danger">&lt;</span>button class=<span class="text-success">&quot;button button-warning button-outline bg-hover-danger&quot;</span> transitions=<span class="text-success">&quot;background-color&quot;</span><span class="text-danger">&gt;</span>Transition Button!<span class="text-danger">&lt;</span>/button<span class="text-danger">&gt;</span></pre>
+
+        <button class="button" onclick="document.body.setAttribute('layout-transition', 'false')">Disable components transitions</button>
+        <button class="button" onclick="document.body.setAttribute('layout-transition', 'true')">Enable components transitions</button>
+        <button class="button button-warning button-outline bg-hover-danger" transitions="background-color">Transition Button!</button>
+
+      </article>
+
+      <div class="my-5"></div>
+
+    </section>
+  </main>
+  <footer class="bg-light border-top border-light-darken" style="height: 6rem"></footer>
+</body>
+</html>

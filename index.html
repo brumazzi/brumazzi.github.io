@@ -2,96 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS CONTENT -->
-	<link rel="stylesheet" href="assets/ministyle/css/ministyle.css">
-	<!-- END CSS CONTENT -->
-	<!-- JS CONTENT -->
-	<script src="assets/ministyle/js/ministyle.js"></script>
-	<script>
-		window.addEventListener("load", ()=>{
-			SVGIcon.addLoading()
 
-      navbar = new Navbar(document.getElementById("navbar"))
-      carousel = new Carousel(document.getElementById("carousel"))
-      collapse = new Collapse(document.getElementById("collapse"))
-      scrollInit()
-      scrollSync()
-      invalidBlankAnchor()
-		})
-	</script>
-	<!-- END JS CONTENT -->
+  <meta name="setting" content="qcarousel">
 
-  <title>Brumazzi - GitHub</title>
+  <link rel="stylesheet" href="/dist/css/quartzo.css">
+  <link rel="icon" href="/dist/svg/quartzo.svg" type="image/x-ico">
 
+  <script src="/dist/js/quartzo.js"></script>
+
+  <title>Dev way</title>
 </head>
 <body>
-	<header>
-		<nav class="navbar bg-dark" id="navbar">
-			<ul class="group">
-				<li class="item active">
-					<a class="text-light text-hover-light" href="#">Home</a>
-				</li>
-				<li class="item">
-					<a class="text-light text-hover-light d-md-inline-block d-none" href="/ministyle/" id="">Ministyle</a>
-					<a class="text-light text-hover-light d-md-none" href="#" id="submenu-open">Ministyle</a>
-					<ul class="submenu collapse bg-dark group" id="collapse" data-collapsed="submenu-open">
-						<li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#basic">Basic Functions</a></li>
-						<li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#colors">Colors</a></li>
-						<li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#components">Components</a></li>
-						<li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#js-components">JS Components</a></li>
-						<li class="item"><a class="text-light text-hover-light bg-hover-darken-light" href="/ministyle#scripts">Scripts</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-		<button class="navbar-toggle" onclick="navbar.toggle()"></button>
-	</header>
-	<main>
-		<div class="carousel" data-transition="opacity" id="carousel">
-			<button class="left" onclick="carousel.prev()"></button>
-			<button class="right" onclick="carousel.next()"></button>
-			<section class="content bg-light bb">
-				<article class="item active">
-					<div class="row flex">
-						<div class="text-center column-12" style="height: 500px;">
-							<h1 class="w-100" style="line-height: 300px; text-transform: uppercase;">Choose Right</h1>
-							<h4>Always use the best for your projects!</h4>
-						</div>
-					</div>
-				</article>
-				<article class="item">
-					<div class="row flex">
-						<div class="text-center column-12" style="height: 500px;">
-							<h1 class="w-100" style="line-height: 300px; text-transform: uppercase;">Ministyle</h1>
-							<h4>Perfection without complication!</h4>
-						</div>
-					</div>
-				</article>
-			</section>
-		</div>
-		<div class="content mt-2">
-			<h3>Projects</h3>
-			<div class="row flex justify-contents-center wrap">
-				<div class="column-3 px-5 px-sm-0">
-					<article class="card shadow w-100">
-						<div class="header">
-							<div class="title text-center">Ministyle</div>
-						</div>
-						<div class="body bt text-justify">
-							<p>Powefull CSS componentes, and easy to use. </p>
-						</div>
-						<div class="footer">
-							<a href="/ministyle/" class="w-100 d-block text-center b-0 button outline bg-hover-light">Read more</a>
-						</div>
-					</article>
-				</div>
-			</div>
-		</div>
-	</main>
-	<footer class="flex row justify-contents-between bg-dark mt-4" style="min-height: 16rem;">
-
-	</footer>
-
+  <header style="height: 56px;" class="bg-dark">
+  </header>
+  <main>
+    <section id="caousel" class="carousel border-bottom" style="height: 700px;">
+      <section class="items">
+        <article show class="text-center bg-light">
+          <a href="doc/index.html" class="d-block text-dark-lighten" style="height: 100%; padding-top: 26rem;">
+            <h1>Grow up your site</h1>
+            <h3 class="pt-5">Quartzo, ultra fast and simple stylesheet framework</h3>
+          </a>
+        </article>
+        <article class="text-center bg-light" style='background-image: url("play-my-life.jpg"); background-position: center;'>
+          <a href="https://brumazzi.itch.io/play-my-life" target="_blank" class="d-block text-light" style="height: 100%; padding-top: 26rem;">
+            <span class="p-5 d-inline-block" style="background-color: #000000a0;">
+              <h1>Looking for fun?</h1>
+              <h3 class="pt-5">Try play my life and be fun!</h3>
+            </span>
+          </a>
+        </article>
+      </section>
+      <button carousel-action="preview"></button>
+      <button carousel-action="next"></button>
+    </section>
+    <section class="container pt-2">
+      <h1>Projects</h1>
+      <div class="flex row justify-contents-around">
+        <div class="card border border-light shadow column-4">
+          <div class="card-header">
+            <h3>Quartzo</h3>
+          </div>
+          <div class="card-body">
+            <p class="text-justify">
+              Learn how to use quartzo.
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="doc/index.html" class="button button-primary">Read more...</a>
+          </div>
+        </div>
+        <div class="card border border-light shadow column-4">
+          <div class="card-header">
+            <h3>Play My Life</h3>
+          </div>
+          <div class="card-body">
+            <p class="text-justify">
+              Try and send your feed.
+            </p>
+          </div>
+          <div class="card-footer text-center">
+            <a href="https://brumazzi.itch.io/play-my-life" target="_blank" class="button button-primary">Read more...</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer style="height: 56px;" class="bg-dark row flex align-items-center justify-contents-evenly">
+    © Brumazzi
+  </footer>
 </body>
 </html>
